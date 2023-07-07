@@ -6,6 +6,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
@@ -18,20 +19,24 @@
     <!-- navbar : Empiece aqui | las metas | Historias | Columnas| Quiero saber mas-->
     <div class="navbar">
       <!-- logo -->
-      <img
-        src="../assets/guatemala-no-se-detiene-logo.svg"
-        alt="Guatemala logo"
-      />
+      
       <!-- lista enlaces-->
-      <ul class="navbar-list">
-        <li class="navbar-list-element">
-          <a href="#seccion-1">| Empiece Aqui</a>
-        </li>
-        <li class="navbar-list-element"><a href="">Las Metas</a></li>
-        <li class="navbar-list-element"><a href="#seccion-4">Historias</a></li>
-        <li class="navbar-list-element"><a href="#seccion-5">Columnas</a></li>
-        <li class="navbar-list-element"><a href="">Quiero saber mas</a></li>
-      </ul>
+      
+      <div class="navbar-list" id="myTopnav">
+        <a class="navbar-list-logo" href="#">
+          <img
+          src="../assets/guatemala-no-se-detiene-logo.svg"
+          alt="Guatemala logo"
+        /></a>
+        <a class="navbar-list-element" href="#seccion-1">|&nbsp; Empiece Aqui</a>
+        <a class="navbar-list-element" href="">|&nbsp; Las Metas</a>
+        <a class="navbar-list-element" href="#seccion-4">|&nbsp; Historias</a>
+        <a class="navbar-list-element" href="#seccion-5">|&nbsp; Columnas</a>
+        <a class="navbar-list-element" href="">|&nbsp; Quiero saber mas</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
 
 
@@ -39,8 +44,6 @@
 
       <div id="parentSlider" class="parentSlider">
         <div class="childSlider"> 
-
-
           <div class="content">
             <div id="slider1" class="img-section img-space">
               <!-- banner-1 -->
@@ -152,28 +155,8 @@
 
 
 
-    <!-- <div class="parentContainer">
-      <div class="childContainer1">
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br/> Vestibulum tortor quam,<br/> feugiat vitae, ultricies eget, tempor sit amet, ante.<br/> Donec eu libero sit amet quam egestas semper.<br/> Aenean ultricies mi vitae est.<br/> Mauris placerat eleifend leo.</p>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br/> Vestibulum tortor quam,<br/> feugiat vitae, ultricies eget, tempor sit amet, ante.<br/> Donec eu libero sit amet quam egestas semper.<br/> Aenean ultricies mi vitae est.<br/> Mauris placerat eleifend leo.</p>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br/> Vestibulum tortor quam,<br/> feugiat vitae, ultricies eget, tempor sit amet, ante.<br/> Donec eu libero sit amet quam egestas semper.<br/> Aenean ultricies mi vitae est.<br/> Mauris placerat eleifend leo.</p>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br/> Vestibulum tortor quam,<br/> feugiat vitae, ultricies eget, tempor sit amet, ante.<br/> Donec eu libero sit amet quam egestas semper.<br/> Aenean ultricies mi vitae est.<br/> Mauris placerat eleifend leo.</p>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br/> Vestibulum tortor quam,<br/> feugiat vitae, ultricies eget, tempor sit amet, ante.<br/> Donec eu libero sit amet quam egestas semper.<br/> Aenean ultricies mi vitae est.<br/> Mauris placerat eleifend leo.</p>
-      </div>
-    </div> -->
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- 
 
 
       
@@ -388,26 +371,8 @@
 
        
         <div class="banner">
-          <div class="exportaciones">
-            <h2>EXPORTACIONES:</h2>
-          </div>
-          <div class="datos">
-            <div class="dato-1">
-              <p>Meta a 2030: US$ 19.000 millones</p>
-            </div>
-            <div class="separator">
-              <p style="color: blue">|</p>
-            </div>
-            <div class="dato-2">
-              <p>A la fecha (abr-23)</p>
-              <input
-                class="data-input"
-                type="text"
-                placeholder="US$0.000 millones"
-                readonly
-              />
-            </div>
-          </div>
+          <img src="../assets/entradas-notas/Banner.png" alt="banner">
+          
         </div>
 
         
@@ -540,13 +505,17 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+
+    <script src="../js/index.js"></script> 
   </body>
 </html>
 <!-- 
   TODO: 
   1 - EFECTOS DE LINK
   2- MONTAR CAROUSEL
-  3- MONTAR IMAGENES COMPUESTAS
+  3- MONTAR IMAGENES COMPUESTAS - [X]
   4- ANIMACIONES
+  5- RESPONSIVE
 -->
