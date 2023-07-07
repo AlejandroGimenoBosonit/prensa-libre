@@ -1,0 +1,67 @@
+.img-space{
+  position: relative;
+}
+
+.img-space > .banner-1 {
+  width: 87%;
+  height: 65%;
+  position: absolute;
+  top: 10%;
+  right: 1%;
+}
+.banner-1 > .texto {
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 27%;
+  left: 37%;
+}
+
+.texto > .titulo {
+  color: #ffffff;
+  position: relative;
+  font-size: 70px;
+}
+.texto > .subtitulo {
+  color: #00BAFF;
+  font-size: 29px;
+  font-weight: lighter;
+  letter-spacing: 10px;
+}
+
+.banner-1 > .imagen-fondo {
+  position: relative;
+  top: 100%;
+}
+
+.img-container  > img {
+  max-width: 80%;
+}
+
+.reloj-fondo > img {
+  width: 70%;
+  position: absolute;
+  right: 15%;
+  bottom: 1%;
+  z-index: 1;
+}
+.bote > img {
+  width: 55%;
+  position: absolute;
+  bottom: 20%;
+  right: 19%;
+  z-index: 2;
+}
+.agua > img {
+  width: 35%;
+  position: absolute;
+  bottom: -3%;
+  right: 30%;
+  z-index: 3;
+}
+/* banner-1 responsive */
+@media screen and (max-width: 600px) {
+  .texto > .titulo {
+    font-size: 50px;
+  }
+}
