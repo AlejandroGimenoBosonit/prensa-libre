@@ -13,7 +13,7 @@ $(document).ready(function(e){
   // e.preventDefault();
   const element = ".navbar-list-element";
   $(element).click(function(){
-    scrollToElement( $(this).attr('href'), 1000 );
+    scrollToElement( $(this).attr('href'), 2000 );
   });      
 });
 

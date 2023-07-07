@@ -1,22 +1,28 @@
 .img-cubo {
-  position: relative;
+  /* position: absolute; */
+  right: 0%;
   width: 100%;
   color: var(--white-color);
 }
 .img-cubo > img {
   width: 30%;
+  height: 100%;
+  /* position: absolute; */
+  /* z-index: 6; */
 }
 
 .img-cubo > .banner-2 {
-  width: 60%;
+  /* background-color: blue; */
+  width: 40%;
   height: 60%;
   position: absolute;
   bottom: 25%;
-  left: 25%;
+  left: 26%;
 }
 
 .banner-2 > .title {
-  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 130px;
   font-size: 25px;
   font-weight: bold;
 
@@ -25,15 +31,17 @@
 }
 
 .banner-2 > .containers {
-  /* margin: 0; */
   width: 100%;
   height: auto;
+  /* background-color: brown; */
+  height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 90px));
+  column-gap: 10px;
 
 }
 .containers > .container {
+  /* background-color: green; */
   background-image: url('../assets/banner-2/cuadro2.png');
   background-repeat: no-repeat; 
   background-position: center;
@@ -73,8 +81,18 @@
     width: 60%;
     height: 60%;
     position: absolute;
-    bottom: 45%;
+    bottom: 25%;
     left: 25%;
+  }
+  .banner-2 > .title {
+    /* margin-bottom: 20px; */
+    /* margin-left: 130px; */
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+  
+    display: flex;
+    justify-content: center;
   }
 
   .banner-2 > .containers {
