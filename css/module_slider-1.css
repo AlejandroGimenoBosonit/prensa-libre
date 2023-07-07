@@ -18,12 +18,12 @@
 }
 
 .texto > .titulo {
-  color: #ffffff;
+  color: var(--white-color);
   position: relative;
   font-size: 70px;
 }
 .texto > .subtitulo {
-  color: #00BAFF;
+  color: var(--blue-subtitle);
   font-size: 29px;
   font-weight: lighter;
   letter-spacing: 10px;
@@ -61,7 +61,24 @@
 }
 /* banner-1 responsive */
 @media screen and (max-width: 600px) {
+  .img-space > .banner-1 {
+    width: 100%;
+    height: 35%;
+  }
+  .banner-1 > .texto {
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 27%;
+    left: 47%;
+  }
+
   .texto > .titulo {
     font-size: 50px;
+  }
+
+  .imagen-fondo{
+    position: absolute;
+    top: 50%;
   }
 }

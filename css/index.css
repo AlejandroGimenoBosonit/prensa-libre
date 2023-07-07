@@ -1,3 +1,11 @@
+:root {
+  --blue-indicator: #4497B9;
+  --blue-subtitle: #00BAFF;
+  --white-color: #ffffff;
+  --grey-color: #b5b5b5;
+  --black-color: #000000;
+}
+
 
 html, body, .childContainer1,.childSlider{
   height: 100%;
@@ -7,7 +15,6 @@ body {
   font-family: "Merriweather Sans", sans-serif;
   
 }
-
 /* Body Page */
 .body-page{
   margin: 0;
@@ -47,3 +54,6 @@ body {
   width: 100%;
   height: calc(2100px/3);
 }
+
+
+

@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/module_navbar.css" />
+    <link rel="stylesheet" href="../css/module_content.css" />
     <link rel="stylesheet" href="../css/module_slider-1.css" />
     <link rel="stylesheet" href="../css/module_slider-2.css" />
     <link rel="stylesheet" href="../css/module_slider-3.css" />
     <link rel="stylesheet" href="../css/module_sections.css" />
+
+    
+    <script language="JavaScript" type="text/javascript" src="../js/navbar.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../js/slider.js"></script>
     <title>Guatemala: Es Hora de Actuar</title>
   </head>
   <body>
     <div class="navbar">
       <div class="navbar-list" id="myTopnav">
-        <a class="navbar-list-logo" href="#">
+        <a class="navbar-list-element navbar-list-logo" href="#">
           <img
-          src="../assets/guatemala-no-se-detiene-logo.svg"
-          alt="Guatemala logo"
+            src="../assets/guatemala-no-se-detiene-logo.svg"
+            alt="Guatemala logo"
         /></a>
-        <a class="navbar-list-element" href="#seccion-1">|&nbsp; Empiece Aqui</a>
+        <a class="navbar-list-element" href="#section-1"
+          >|&nbsp; Empiece Aqui</a
+        >
         <a class="navbar-list-element" href="">|&nbsp; Las Metas</a>
-        <a class="navbar-list-element" href="#seccion-4">|&nbsp; Historias</a>
-        <a class="navbar-list-element" href="#seccion-5">|&nbsp; Columnas</a>
+        <a class="navbar-list-element" href="#section-4">|&nbsp; Historias</a>
+        <a class="navbar-list-element" href="#section-5">|&nbsp; Columnas</a>
         <a class="navbar-list-element" href="">|&nbsp; Quiero saber mas</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -37,135 +48,145 @@
       </div>
     </div>
 
-
     <div class="body-page">
-
       <div id="parentSlider" class="parentSlider">
-        <div class="childSlider"> 
+        <div class="childSlider">
           <div class="content">
-            <div id="slider1" class="img-section img-space">
-              <!-- banner-1 -->
-              <div class="banner-1">
-                <!-- texto -->
-                <div class="texto">
-                  <p style="margin: 0;" class="titulo">GUATEMALA</p>
-                  <p style="margin: 0;" class="subtitulo">ES HORA DE ACTUAR</p>
+
+
+            <div class="button-container">
+              <div class="vl"></div>
+              <a onclick="changeEllipsis(event)"  class="ellipse" href="#slider1"></a>
+              <a onclick="changeEllipsis(event)"  class="ellipse" href="#slider2"></a>
+              <a onclick="changeEllipsis(event)"  class="ellipse" href="#slider3"></a>
+              <div class="vl"></div>
+            </div>
+            
+            <div class="slides">
+              <div id="slider1" class="img-section img-space">
+                <div class="banner-1">
+                  <div class="texto">
+                    <p style="margin: 0" class="titulo">GUATEMALA</p>
+                    <p style="margin: 0" class="subtitulo">ES HORA DE ACTUAR</p>
+                  </div>
+                  <div class="imagen-fondo">
+                    <div class="img-container reloj-fondo">
+                      <img
+                        src="../assets/banner-1/relojfondo.png"
+                        alt="relojfondo"
+                      />
+                    </div>
+                    <div class="img-container bote">
+                      <img src="../assets/banner-1/bote.png" alt="bote" />
+                    </div>
+                    <div class="img-container agua">
+                      <img src="../assets/banner-1/agua.png" alt="agua" />
+                    </div>
+                  </div>
                 </div>
-                <!-- imagenes -->
-                <div class="imagen-fondo">
-                  <div class="img-container reloj-fondo">
-                    <img src="../assets/banner-1/relojfondo.png" alt="relojfondo">
-                  </div>
-                  <div class="img-container bote">
-                    <img src="../assets/banner-1/bote.png" alt="bote">
-                  </div>
-                  <div class="img-container agua">
-                    <img src="../assets/banner-1/agua.png" alt="agua">
-                  </div>
-                </div>
-                
               </div>
+  
               
+              <div id="slider2" class="img-section img-cubo">
+                <img src="../assets/fondo-banners/cubo_grande.png" alt="cubo" />
+                <div class="banner-2">
+                  <div class="title">
+                    <p>Las metas que no nos detienen</p>
+                  </div>
+  
+                  <div class="containers">
+                    <div class="container">
+                      <div class="container-img">
+                        <img
+                          src="../assets/banner-2/contenedor.png"
+                          alt="contenedor"
+                        />
+                      </div>
+  
+                      <p class="container-subtitle">¡Más exportaciones!</p>
+                      <hr />
+                      <p class="container-text">
+                        Pasar de US$14 mil a US$19 mil millones al 2030
+                      </p>
+                    </div>
+                    <div class="container">
+                      <div class="container-img">
+                        <img
+                          style="width: 90%"
+                          src="../assets/banner-2/moneda.png"
+                          alt="moneda"
+                        />
+                      </div>
+  
+                      <p class="container-subtitle">¡Más capital extrangero!</p>
+                      <hr />
+                      <p class="container-text">
+                        Pasar de US$900 millones a US$2100 millones al 2030
+                      </p>
+                    </div>
+                    <div class="container">
+                      <div class="container-img">
+                        <img
+                          src="../assets/banner-2/personas.png"
+                          alt="personas"
+                        />
+                      </div>
+                      <p class="container-subtitle">¡Más plazas de trabajo!</p>
+                      <hr />
+                      <p class="container-text">
+                        Generar 2.5 millones de empleos nuevos al 2030
+                      </p>
+                    </div>
+                    <div class="container">
+                      <div class="container-img">
+                        <img src="../assets/banner-2/dinero.png" alt="dinero" />
+                      </div>
+  
+                      <p class="container-subtitle">¡Más ingresos!</p>
+                      <hr />
+                      <p class="container-text">
+                        Pasar de un PIB per capita de US$9 mil a US$14 mil 500
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="slider3" class="img-section img-reloj">
+                <img src="../assets/fondo-banners/reloj_2.png" alt="reloj" />
+                <div class="banner-3">
+                  <div class="texto3">
+                    <p style="margin: 0" class="titulo3">
+                      El AVANCE DE GUATEMALA HACIA LAS METAS QUE TODOS TENEMOS
+                      COMO EQUIPO ESTA AQUI
+                    </p>
+                  </div>
+                  <div class="imagen-fondo">
+                    <div class="img-container3 agua2">
+                      <img src="../assets/banner-3/agua.png" alt="agua2" />
+                    </div>
+                    <div class="img-container3 bote2">
+                      <img src="../assets/banner-3/bote2.png" alt="bote2" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
-          <div id="slider2" class="img-section img-cubo">
-            <img src="../assets/fondo-banners/cubo_grande.png" alt="cubo">
-            <div class="banner-2">
-              <div class="title">
-                <p>Las metas que no nos detienen</p>
-              </div>
 
-
-              <div class="containers">
-                <div class="container">
-                  <div class="container-img">
-                    <img src="../assets/banner-2/contenedor.png" alt="contenedor">
-                  </div>
-                  
-                  <p class="container-subtitle">¡Más exportaciones!</p>
-                  <hr/>
-                  <p class="container-text">Pasar de US$14 mil a US$19 mil millones al 2030</p>
-                </div>
-                <div class="container">
-                  <div class="container-img">
-                    <img style="width: 90%;" src="../assets/banner-2/moneda.png" alt="moneda">
-                  </div>
-                  
-                  <p class="container-subtitle">¡Más capital extrangero!</p>
-                  <hr/>
-                  <p class="container-text">Pasar de US$900 millones a US$2100 millones al 2030</p>
-                </div>
-                <div class="container">
-                  <div class="container-img">
-                    <img src="../assets/banner-2/personas.png" alt="personas">
-                  </div>
-                  <p class="container-subtitle">¡Más plazas de trabajo!</p>
-                  <hr/>
-                  <p class="container-text">Generar 2.5 millones de empleos nuevos al 2030</p>
-                </div>
-                <div class="container">
-                  <div class="container-img">
-                    <img src="../assets/banner-2/dinero.png" alt="dinero">
-                  </div>
-                  
-                  <p class="container-subtitle">¡Más ingresos!</p>
-                  <hr/>
-                  <p class="container-text">Pasar de un PIB per capita de US$9 mil a US$14 mil 500</p>
-                </div>
-              </div>
-
-
-
-            </div>
-              
-          </div>
-
-
-          <div id="slider3" class="img-section img-reloj">
-            <img src="../assets/fondo-banners/reloj_2.png" alt="reloj">
-            <div class="banner-3">
-              <!-- texto -->
-              <div class="texto3">
-                <p style="margin: 0;" class="titulo3">El AVANCE DE GUATEMALA HACIA LAS METAS QUE TODOS TENEMOS COMO EQUIPO ESTA AQUI</p>
-              </div>
-              <!-- imagenes -->
-              <div class="imagen-fondo">
-                <div class="img-container3 agua2">
-                  <img src="../assets/banner-3/agua.png" alt="agua2">
-                </div>
-                <div class="img-container3 bote2">
-                  <img src="../assets/banner-3/bote2.png" alt="bote2">
-                </div>
-              </div>
-            </div>
-          </div>
+            
           </div>
         </div>
-        
       </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-      
       <div class="sections">
-        
-        <div id="seccion-1" class="empiece-aqui">
-          
+        <div id="section-1" class="empiece-aqui">
           <div class="titulo-mini">
-            <p class="titulo-seccion">Empiece aquí</p>
+            <p class="titulo-section">Empiece aquí</p>
           </div>
-          
+
           <div class="image">
             <img
               style="width: 1140px"
@@ -173,7 +194,7 @@
               alt="Empice aqui"
             />
           </div>
-         
+
           <div class="titulo-principal">
             <h2>
               Prensa Libre y Guatevisión se unen al plan de país que lo cambiará
@@ -184,25 +205,22 @@
 
         <hr />
 
-        
-        <div id="seccion-2" class="turismo">
-          
+        <div id="section-2" class="turismo">
           <div class="titulo-mini">
-            <p class="titulo-seccion">Turismo</p>
+            <p class="titulo-section">Turismo</p>
           </div>
-          
+
           <div class="cartas-turismo">
             <div class="carta-turismo-1">
-              
               <img
                 src="../assets//entradas-notas/Turismo/timbre-electronico.png"
                 alt="timbre"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
                 <p>Negocios</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p class="titulo-carta-texto">
                   Por qué el timbre electrónico puede facilitarle la vida a los
@@ -211,16 +229,15 @@
               </div>
             </div>
             <div class="carta-turismo-2">
-              
               <img
                 src="../assets//entradas-notas/Turismo/puente-belice.png"
                 alt="timbre"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
                 <p>Desarrollo</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p class="titulo-carta-texto">
                   Así será el Puente Belice 2: Accesos, rutas, diseño y cómo
@@ -233,54 +250,49 @@
 
         <hr />
 
-        
-        <div id="seccion-3" class="no-se-detiene">
-          
+        <div id="section-3" class="no-se-detiene">
           <div class="titulo-mini">
-            <p class="titulo-seccion">El turismo no se detiene</p>
+            <p class="titulo-section">El turismo no se detiene</p>
           </div>
           <div class="cartas cartas-no-se-detiene">
             <div class="cartas-no-se-detiene-1">
-              
               <img
                 src="../assets//entradas-notas/El-turismo-no-se-detiene/pista-del-aeropuerto-1.png"
                 alt="timbre"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Turismo</p>
+                <p class="titulo-section">Turismo</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>Cómo será la ampliación de la pista del aeropuerto</p>
               </div>
             </div>
             <div class="cartas-no-se-detiene-2">
-              
               <img
                 src="../assets//entradas-notas/El-turismo-no-se-detiene/pista-del-aeropuerto-2.png"
                 alt="timbre"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Turismo</p>
+                <p class="titulo-section">Turismo</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>Cómo será la ampliación de la pista del aeropuerto</p>
               </div>
             </div>
             <div class="cartas-no-se-detiene-3">
-              
               <img
                 src="../assets//entradas-notas/El-turismo-no-se-detiene/pista-del-aeropuerto-3.png"
                 alt="timbre"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Turismo</p>
+                <p class="titulo-section">Turismo</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>Cómo será la ampliación de la pista del aeropuerto</p>
               </div>
@@ -290,16 +302,14 @@
 
         <hr />
 
-        
-        <div id="seccion-4" class="historias">
+        <div id="section-4" class="historias">
           <div class="titulo-mini">
-            <p class="titulo-seccion">
+            <p class="titulo-section">
               Historias de guatemaltecos que no se detienen
             </p>
           </div>
           <div class="cartas historias-guatemaltecos">
             <div class="historias-guatemaltecos-1">
-              
               <div class="fake-video">
                 <img
                   src="../assets//entradas-notas/historias-de-guatemaltecos-que-no-se-detienen/historias-de-guatemaltecos-1.png"
@@ -311,17 +321,16 @@
                   alt="play icon"
                 />
               </div>
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Negocios</p>
+                <p class="titulo-section">Negocios</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>El guatemalteco que cambió su vida con un segundo idioma</p>
               </div>
             </div>
             <div class="historias-guatemaltecos-2">
-              
               <div class="fake-video">
                 <img
                   src="../assets//entradas-notas/historias-de-guatemaltecos-que-no-se-detienen/historias-de-guatemaltecos-2.png"
@@ -333,17 +342,16 @@
                   alt="play icon"
                 />
               </div>
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Educación</p>
+                <p class="titulo-section">Educación</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>El guatemalteco que cambió su vida con un segundo idioma</p>
               </div>
             </div>
             <div class="historias-guatemaltecos-3">
-              
               <div class="fake-video">
                 <img
                   src="../assets//entradas-notas/historias-de-guatemaltecos-que-no-se-detienen/historias-de-guatemaltecos-3.png"
@@ -355,11 +363,11 @@
                   alt="play icon"
                 />
               </div>
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Historias</p>
+                <p class="titulo-section">Historias</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>El guatemalteco que cambió su vida con un segundo idioma</p>
               </div>
@@ -367,59 +375,53 @@
           </div>
         </div>
 
-       
         <div class="banner">
-          <img src="../assets/entradas-notas/Banner.png" alt="banner">
-          
+          <img src="../assets/entradas-notas/Banner.png" alt="banner" />
         </div>
 
-        
-        <div id="seccion-5" class="columnas">
+        <div id="section-5" class="columnas">
           <div class="titulo-mini">
-            <p class="titulo-seccion">Columnas</p>
+            <p class="titulo-section">Columnas</p>
           </div>
           <div class="cartas cartas-columnas">
             <div class="columna-1">
-              
               <img
                 src="../assets//entradas-notas/Columnas/columnas-1.png"
                 alt="columnas1"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Aeropuerto</p>
+                <p class="titulo-section">Aeropuerto</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>Cómo será la ampliación de la pista del aeropuerto</p>
               </div>
             </div>
             <div class="columna-2">
-              
               <img
                 src="../assets//entradas-notas/Columnas/columnas-2.png"
                 alt="columnas1"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Desarrollo</p>
+                <p class="titulo-section">Desarrollo</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>Cómo será la ampliación de la pista del aeropuerto</p>
               </div>
             </div>
             <div class="columna-3">
-              
               <img
                 src="../assets//entradas-notas/Columnas/columnas-3.png"
                 alt="columnas1"
               />
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Infraestructura</p>
+                <p class="titulo-section">Infraestructura</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>Cómo será la ampliación de la pista del aeropuerto</p>
               </div>
@@ -429,13 +431,12 @@
 
         <hr />
 
-        <div id="seccion-6" class="entrevistas">
+        <div id="section-6" class="entrevistas">
           <div class="titulo-mini">
-            <p class="titulo-seccion">Entrevistas: El cambio empieza aquí</p>
+            <p class="titulo-section">Entrevistas: El cambio empieza aquí</p>
           </div>
           <div class="cartas cartas-entrevistas">
             <div class="carta-entrevista-1">
-              
               <div class="fake-video">
                 <img
                   src="../assets//entradas-notas/entrevistas-el-cambio-empieza-aqui/entrevistas-1.png"
@@ -447,17 +448,16 @@
                   alt="play icon"
                 />
               </div>
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Educación</p>
+                <p class="titulo-section">Educación</p>
               </div>
-             
+
               <div class="titulo-carta">
                 <p>El guatemalteco que cambió su vida con un segundo idioma</p>
               </div>
             </div>
             <div class="carta-entrevista-2">
-              
               <div class="fake-video">
                 <img
                   src="../assets//entradas-notas/entrevistas-el-cambio-empieza-aqui/entrevistas-2.png"
@@ -469,17 +469,16 @@
                   alt="play icon"
                 />
               </div>
-             
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Educación</p>
+                <p class="titulo-section">Educación</p>
               </div>
-              
+
               <div class="titulo-carta">
                 <p>El guatemalteco que cambió su vida con un segundo idioma</p>
               </div>
             </div>
             <div class="carta-entrevista-3">
-            
               <div class="fake-video">
                 <img
                   src="../assets//entradas-notas/entrevistas-el-cambio-empieza-aqui/entrevistas-3.png"
@@ -491,11 +490,11 @@
                   alt="play icon"
                 />
               </div>
-              
+
               <div class="titulo-mini titulo-mini-carta">
-                <p class="titulo-seccion">Educación</p>
+                <p class="titulo-section">Educación</p>
               </div>
-              
+
               <div class="titulo-carta">
                 <p>El guatemalteco que cambió su vida con un segundo idioma</p>
               </div>
@@ -505,15 +504,11 @@
       </div>
     </div>
 
-
-    <script src="../js/index.js"></script> 
   </body>
 </html>
 <!-- 
   TODO: 
   1 - EFECTOS DE LINK
   2- MONTAR CAROUSEL
-  3- MONTAR IMAGENES COMPUESTAS - [X]
   4- ANIMACIONES
-  5- RESPONSIVE
 -->

@@ -17,20 +17,20 @@ word-spacing: 10px;
 -webkit-transform: translate(-50%,-50%);
 transform: translate(-50%,-50%);
 position: absolute;
-top: 25%;
+top: 5%;
 /* top: 35%; */
 left: 40%;
 }
 .texto3 > .titulo3 {
-color: #ffffff;
+color: var(--white-color);
 font-size: 30px;
 position: absolute;
-top: 10%;
+top: 5%;
 }
 
 .banner-3 > .imagen-fondo {
 position: relative;
-top: 10%;
+top: 5%;
 }
 .agua2 > img {
 position: absolute;
@@ -63,20 +63,32 @@ opacity: 0.5;
 /* banner-2 responsive */
 
 @media screen and (max-width: 600px) {
+  .img-reloj > .banner-3 {
+    height: 90%;
+    position: absolute;
+    top: 10%; 
+    }
+
 .banner-3 > .texto3 {
-  width: 300px;
-  top: 45%;
-  left: 45%;
-}
-.texto3 > .titulo3 {
-  color: #ffffff;
-  font-size: 20px;
+  width: 500px;
+  width: 150px;
+  word-spacing: 10px;
+  
+  
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   position: absolute;
-  top: 10%;
+  top: 5%;
+  left: 40%;
+  }
+.texto3 > .titulo3 {
+  color: var(--white-color);
+  font-size: 15px;
+  position: absolute;
   }
 
 .banner-3 > .imagen-fondo {
-  top: 60%;
+  top: 30%;
   right: 50%;
   width: 150%;
 }

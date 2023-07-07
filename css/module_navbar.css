@@ -1,6 +1,6 @@
 /* navbar */
 .navbar {
-  background-color: #000000;
+  background-color: var(--black-color);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -21,7 +21,7 @@
 }
 .navbar-list a {
   float: left;
-  color: #f2f2f2;
+  color: var(--white-color);
   text-align: center;
   padding: 0 5px 0 5px;
   text-decoration: none;
