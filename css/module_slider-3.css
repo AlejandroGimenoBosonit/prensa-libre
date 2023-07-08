@@ -10,14 +10,13 @@ bottom: 0;
 }
 .banner-3 > .texto3 {
 width: 500px;
-/* width: 200px; */
 word-spacing: 10px;
 
 
 -webkit-transform: translate(-50%,-50%);
 transform: translate(-50%,-50%);
 position: absolute;
-top: 30%;
+top: 5%;
 left: 45%;
 }
 .texto3 > .titulo3 {
@@ -29,7 +28,7 @@ top: 10%;
 
 .banner-3 > .imagen-fondo {
 position: relative;
-top: 15%;
+/* top: 1%; */
 }
 .agua2 > img {
 position: absolute;

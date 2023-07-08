@@ -16,8 +16,7 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/module_navbar.css" />
-    <link rel="stylesheet" href="../css/module_content.css" />
-    <link rel="stylesheet" href="../css/slider.css" />
+    <link rel="stylesheet" href="../css/module_slider.css" />
     <link rel="stylesheet" href="../css/module_slider-1.css" />
     <link rel="stylesheet" href="../css/module_slider-2.css" />
     <link rel="stylesheet" href="../css/module_slider-3.css" />
@@ -58,9 +57,9 @@
       <!-- vertical carousel -->
       <div id="container">
         <div class="vl"></div>
-        <input hidden type="radio" name="carousel-control" id="button_a" checked/>
-        <input hidden type="radio" name="carousel-control" id="button_b"/>
-        <input hidden type="radio" name="carousel-control" id="button_c"/>
+        <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_a" checked/>
+        <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_b"/>
+        <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_c"/>
         <div class="vl"></div>
         
         <div id="navigation">
@@ -89,7 +88,7 @@
                           />
                         </div>
                         <div class="img-container bote">
-                          <img src="../assets/banner-1/bote.png" alt="bote" />
+                          <img id="bote-img" class="animate-boat" src="../assets/banner-1/bote.png" alt="bote" />
                         </div>
                         <div class="img-container agua">
                           <img src="../assets/banner-1/agua.png" alt="agua" />
@@ -193,137 +192,7 @@
                       
                 
         
-    </div> <!-- // #container -->
-
-
-
-
-      <!-- <div class="parentSlider">
-        <div class="childSlider">
-          <div class="content">
-            <div class="button-container">
-              <div class="vl"></div>
-              <a onclick="changeEllipsis(event)"  class="ellipse" href="#slider1"></a>
-              <a onclick="changeEllipsis(event)"  class="ellipse" href="#slider2"></a>
-              <a onclick="changeEllipsis(event)"  class="ellipse" href="#slider3"></a>
-              <div class="vl"></div>
-            </div>
-            
-            <div class="slides">
-              <div id="slider1" class="img-section img-space">
-                <div class="banner-1">
-                  <div class="texto">
-                    <p style="margin: 0" class="titulo">GUATEMALA</p>
-                    <p style="margin: 0" class="subtitulo">ES HORA DE ACTUAR</p>
-                  </div>
-                  <div class="imagen-fondo">
-                    <div class="img-container reloj-fondo">
-                      <img
-                        src="../assets/banner-1/relojfondo.png"
-                        alt="relojfondo"
-                      />
-                    </div>
-                    <div class="img-container bote">
-                      <img src="../assets/banner-1/bote.png" alt="bote" />
-                    </div>
-                    <div class="img-container agua">
-                      <img src="../assets/banner-1/agua.png" alt="agua" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              
-              <div id="slider2" class="img-section img-cubo">
-                <img src="../assets/fondo-banners/cubo_grande.png" alt="cubo" />
-                <div class="banner-2">
-                  <div class="title">
-                    <p>Las metas que no nos detienen</p>
-                  </div>
-  
-                  <div class="containers">
-                    <div class="container">
-                      <div class="container-img">
-                        <img
-                          src="../assets/banner-2/contenedor.png"
-                          alt="contenedor"
-                        />
-                      </div>
-  
-                      <p class="container-subtitle">¡Más exportaciones!</p>
-                      <hr />
-                      <p class="container-text">
-                        Pasar de US$14 mil a US$19 mil millones al 2030
-                      </p>
-                    </div>
-                    <div class="container">
-                      <div class="container-img">
-                        <img
-                          style="width: 90%"
-                          src="../assets/banner-2/moneda.png"
-                          alt="moneda"
-                        />
-                      </div>
-  
-                      <p class="container-subtitle">¡Más capital extrangero!</p>
-                      <hr />
-                      <p class="container-text">
-                        Pasar de US$900 millones a US$2100 millones al 2030
-                      </p>
-                    </div>
-                    <div class="container">
-                      <div class="container-img">
-                        <img
-                          src="../assets/banner-2/personas.png"
-                          alt="personas"
-                        />
-                      </div>
-                      <p class="container-subtitle">¡Más plazas de trabajo!</p>
-                      <hr />
-                      <p class="container-text">
-                        Generar 2.5 millones de empleos nuevos al 2030
-                      </p>
-                    </div>
-                    <div class="container">
-                      <div class="container-img">
-                        <img src="../assets/banner-2/dinero.png" alt="dinero" />
-                      </div>
-  
-                      <p class="container-subtitle">¡Más ingresos!</p>
-                      <hr />
-                      <p class="container-text">
-                        Pasar de un PIB per capita de US$9 mil a US$14 mil 500
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div id="slider3" class="img-section img-reloj">
-                <img src="../assets/fondo-banners/reloj_2.png" alt="reloj" />
-                <div class="banner-3">
-                  <div class="texto3">
-                    <p style="margin: 0" class="titulo3">
-                      El AVANCE DE GUATEMALA HACIA LAS METAS QUE TODOS TENEMOS
-                      COMO EQUIPO ESTA AQUI
-                    </p>
-                  </div>
-                  <div class="imagen-fondo">
-                    <div class="img-container3 agua2">
-                      <img src="../assets/banner-3/agua.png" alt="agua2" />
-                    </div>
-                    <div class="img-container3 bote2">
-                      <img src="../assets/banner-3/bote2.png" alt="bote2" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-
+    </div>
 
 
 

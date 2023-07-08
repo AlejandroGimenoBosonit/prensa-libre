@@ -23,9 +23,6 @@
   top: 30%;
   z-index: 1;
 }
-section::-webkit-scrollbar {
-  display: none;
-}
 
 .carousel {
   position: absolute;
@@ -79,11 +76,10 @@ section::-webkit-scrollbar {
 }
           
 [class^="panel_"] {
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   width: inherit;
   height: inherit;
-  /* padding: 48px; */
 }
           
 #navigation {

@@ -49,8 +49,10 @@
   width: 55%;
   position: absolute;
   bottom: 20%;
-  right: 19%;
   z-index: 2;
+  right: 19%; /* posicion inicial */
+  /* animation: inverted-movement-boat 1s forwards; */
+
 }
 .agua > img {
   width: 35%;
@@ -59,6 +61,38 @@
   right: 30%;
   z-index: 3;
 }
+
+/* animation */
+.animate-boat {
+  animation: inverted-movement-boat 1s forwards;
+}
+.animate-boat-2 {
+  animation: movement-boat 1s forwards;
+}
+
+
+@keyframes inverted-movement-boat {
+  0% { right: 20% }
+  100% { right: 19% }
+  
+}
+
+@keyframes movement-boat {
+  0% { right: 19% }
+  100% { right: 20% }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* banner-1 responsive */
 @media screen and (max-width: 600px) {
   .img-space > .banner-1 {
