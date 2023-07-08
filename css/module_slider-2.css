@@ -17,10 +17,16 @@
   height: 60%;
   position: absolute;
   bottom: 25%;
+  
   left: 26%;
 }
 
-.banner-2 > .title {
+#banner-2-title > p {
+  /* animate */
+  
+}
+
+.banner-2 > #banner-2-title {
   margin-bottom: 20px;
   margin-left: 130px;
   font-size: 25px;
@@ -84,7 +90,7 @@
     bottom: 25%;
     left: 25%;
   }
-  .banner-2 > .title {
+  .banner-2 > #banner-2-title {
     /* margin-bottom: 20px; */
     /* margin-left: 130px; */
     margin: 0;
