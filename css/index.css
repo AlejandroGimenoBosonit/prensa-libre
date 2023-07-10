@@ -1,29 +1,34 @@
+@import url('./module_navbar.css');
+@import url('./module_slider.css');
+@import url('./module_slider-1.css');
+@import url('./module_slider-2.css');
+@import url('./module_slider-3.css');
+@import url('./module_sections.css');
+
 :root {
-  --blue-indicator: #4497B9;
-  --blue-subtitle: #00BAFF;
+  --blue-indicator: #4497b9;
+  --blue-subtitle: #00baff;
   --white-color: #ffffff;
   --grey-color: #b5b5b5;
   --black-color: #000000;
 }
 
-
-html, body, .childContainer1,.childSlider{
+html,
+body,
+.childContainer1,
+.childSlider {
   height: 100%;
 }
 body {
   margin: 0;
   font-family: "Merriweather Sans", sans-serif;
-  
 }
-/* Body Page */
-.body-page{
+.body-page {
   margin: 0;
   height: 100%;
   overflow: hidden;
 }
 .img-section {
   width: 100%;
-  height: calc(2100px/3);
+  height: calc(2100px / 3);
 }
-
-

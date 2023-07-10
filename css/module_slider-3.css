@@ -76,6 +76,7 @@ opacity: 0.5;
   animation: inverted-movement-banner-3-title 1s forwards;
 }
 
+/* animations */
 @keyframes movement-bote2 {
   0%{ right: 0%; }
   100%{ right: 10%; }
@@ -97,8 +98,7 @@ opacity: 0.5;
   100%{ left: 0%; }
 }
 
-/* banner-2 responsive */
-
+/* responsive */
 @media screen and (max-width: 600px) {
   .img-reloj > .banner-3 {
       height: 90%;
@@ -120,11 +120,7 @@ opacity: 0.5;
   #banner-3-title p.titulo3{
   
     font-size: 20px;
-    /* color: red; */
   }
-
-
-
   .banner-3 > .imagen-fondo {
     top: 40%;
     right: 50%;
