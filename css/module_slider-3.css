@@ -8,29 +8,27 @@ height: 90%;
 position: absolute;
 bottom: 0;
 }
-.banner-3 > .texto3 {
+.banner-3 > #banner-3-title {
 width: 500px;
-/* width: 200px; */
 word-spacing: 10px;
-
+font-size: 30px;
 
 -webkit-transform: translate(-50%,-50%);
 transform: translate(-50%,-50%);
 position: absolute;
-top: 25%;
-/* top: 35%; */
-left: 40%;
+top: 5%;
+left: 0%;
 }
-.texto3 > .titulo3 {
-color: #ffffff;
-font-size: 30px;
+#banner-3-title > .titulo3 {
+color: var(--white-color);
+
 position: absolute;
 top: 10%;
 }
 
 .banner-3 > .imagen-fondo {
 position: relative;
-top: 10%;
+/* top: 1%; */
 }
 .agua2 > img {
 position: absolute;
@@ -40,7 +38,7 @@ right: 0;
 z-index: 1;
 }
 
-.bote2 > img {
+.bote2 > #bote2-img {
 position: absolute;
 width: 55%;
 top: 20%;
@@ -60,26 +58,78 @@ bottom: -40%;
 opacity: 0.5;
 }
 
+
+/* animations */
+.animate-bote2{
+  animation: movement-bote2 1s forwards;
+}
+/* inversa */
+.animate-bote2-2{
+  animation: movement-bote2-2 1s forwards;
+}
+
+.animate-banner-3-title{
+  animation: movement-banner-3-title 1s forwards;
+}
+
+.animate-banner-3-title-inverted{
+  animation: inverted-movement-banner-3-title 1s forwards;
+}
+
+@keyframes movement-bote2 {
+  0%{ right: 0%; }
+  100%{ right: 10%; }
+}
+
+@keyframes movement-bote2-2 {
+  0%{ right: 10%; }
+  100%{ right: 0%; }
+}
+
+/* 45 */
+@keyframes movement-banner-3-title{
+  0%{ left: 0%; }
+  100%{ left: 45%; }
+}
+
+@keyframes inverted-movement-banner-3-title{
+  0%{ left: 45%; }
+  100%{ left: 0%; }
+}
+
 /* banner-2 responsive */
 
 @media screen and (max-width: 600px) {
-.banner-3 > .texto3 {
-  width: 300px;
-  top: 45%;
-  left: 45%;
-}
-.texto3 > .titulo3 {
-  color: #ffffff;
-  font-size: 20px;
-  position: absolute;
-  top: 10%;
+  .img-reloj > .banner-3 {
+      height: 90%;
+      position: absolute;
+      top: 10%; 
+    }
+
+    .banner-3 > #banner-3-title {
+      width: 100px;
+    }
+  #banner-3 div.texto3 {
+    word-spacing: 10px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 200px;
+    top: 1%;
+  }
+  #banner-3-title p.titulo3{
+  
+    font-size: 20px;
+    /* color: red; */
   }
 
-.banner-3 > .imagen-fondo {
-  top: 60%;
-  right: 50%;
-  width: 150%;
-}
+
+
+  .banner-3 > .imagen-fondo {
+    top: 40%;
+    right: 50%;
+    width: 150%;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 900px) {
 .banner-3 > .imagen-fondo {

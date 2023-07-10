@@ -1,18 +1,19 @@
 /* navbar */
 .navbar {
-  background-color: #000000;
+  background-color: var(--black-color);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  height: 40px;
   padding: 10px;
 }
-.navbar-list-logo{
+img{
   padding: 0;
 }
-.navbar-list-logo > img{
-  width: 60%;
+.navbar-logo{
+  width: 6%;
   height: auto;
   
 }
@@ -21,7 +22,7 @@
 }
 .navbar-list a {
   float: left;
-  color: #f2f2f2;
+  color: var(--white-color);
   text-align: center;
   padding: 0 5px 0 5px;
   text-decoration: none;
@@ -36,19 +37,30 @@
 
 /* Navbar Responsive */
 @media screen and (max-width: 600px) {
-  .navbar-list a:not(:first-child) {display: none;}
+  .navbar{
+    height: 6%;
+  }
+  .navbar-logo{
+    width: 30%;
+  }
+  .navbar-list a:not(:first-child) {
+    display: none;
+  }
   .navbar-list a.icon {
     float: right;
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar-list.responsive {position: relative;}
+  .navbar-list.responsive {
+    position: absolute;
+    top: 0%;
+    z-index: 3;
+    background-color: black;
+  }
   .navbar-list.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
+    
   }
   .navbar-list.responsive a {
     float: none;
