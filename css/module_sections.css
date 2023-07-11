@@ -105,10 +105,9 @@ img {
 
 @media screen and (max-width: 600px) {
   .sections {
-    margin-left: 10px;
-    margin-right: 10px;
-    position: absolute;
-    left: 16%;
+   width: 100%;
+   position: absolute;
+   top: 66%;
   }
   .titulo-principal h2 {
     font-size: 18px;

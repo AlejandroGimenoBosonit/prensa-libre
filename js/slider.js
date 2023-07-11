@@ -60,9 +60,24 @@ const clicked = (id) => {
   }
 };
 
+
+
 const selectMultiElements = (id, newClass) => {
   const elements = document.querySelectorAll(id);
   elements.forEach((el) => {
     el.className = newClass;
   });
+};
+
+
+const sliderArrow = (label) => {
+
+  // saber en que banner estamos
+  const classElement = document.getElementById('focused').className;
+  console.log(label);
+
+  
+
+
+
 };

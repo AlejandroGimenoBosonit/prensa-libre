@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -43,7 +44,30 @@
       </div>
     </div>
     <div id="body-page" class="body-page">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div id="container">
+
+
+
+
+
+
+
+
+
         <div class="vl"></div>
         <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_a" checked/>
         <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_b"/>
@@ -58,9 +82,41 @@
           <div class="vl"></div>
         </div> 
                 
+
+        
+
+        <div class="navigation-alternative">
+          <label class="icon-up">
+            <i onclick="sliderArrow('up')" id="arrowUp" class="fa-solid fa-chevron-up fa-3x"></i>
+          </label>
+          <label class="icon-down">
+            <i onclick="sliderArrow('down')" id="arrowDown" class="fa-solid fa-chevron-down fa-3x"></i>
+          </label>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="carousel" id="carousel">
             <div class="p-wrapper">
-                <section class="panel_a">
+                <section id="focused" class="panel_a">
                   <div id="slider1" class="img-section img-space">
                     <div class="banner-1">
                       <div id="banner-1-title" class="animate-title">
@@ -83,6 +139,8 @@
                       </div>
                     </div>
                 </section>
+
+
 
                 <section id="metas" class="panel_b">
                   <img class="fondo" src="../assets/fondo-banners/cubo_grande.png" alt="cubo" />
@@ -167,7 +225,7 @@
                     <div id="banner-3" class="banner-3">
                       <div id="banner-3-title" class="texto3 animate-banner-3-title">
                         <p style="margin: 0" class="titulo3">
-                          El AVANCE DE GUATEMALA HACIA LAS METAS QUE TODOS TENEMOS
+                          EL AVANCE DE GUATEMALA HACIA LAS METAS QUE TODOS TENEMOS
                           COMO EQUIPO ESTÁ AQUÍ
                         </p>
                       </div>
@@ -183,7 +241,7 @@
                   </div>
                 </section>  
             </div>
-        </div>            
+        </div>          
               
     </div>
 

@@ -3,7 +3,7 @@
 }
 .fondo {
   width: 32%;
-  height: 143%;
+  height: 119%;
   position: relative; 
   z-index: 1;
 }
@@ -27,11 +27,12 @@
 .banner-2 > #banner-2-title {
   position: absolute;
   left: 1%;
-
+  z-index: 1;
   width: 500px;
 
   margin-bottom: 20px;
-  font-size: 30px;
+  font-family: 'Merriweather', serif;
+  font-size: 35px;
   font-weight: bold;
 
   display: flex;
@@ -47,7 +48,7 @@
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 90px));
-  column-gap: 20px;
+  column-gap: 5px;
 }
 .containers > .container {
   background-repeat: no-repeat;
@@ -68,7 +69,6 @@
   height: auto;
   position: absolute;
   z-index: 1;
-
   opacity: 0;
 }
 
@@ -80,7 +80,7 @@
 .container-subtitle {
   z-index: 1;
   font-size: 13px;
-  margin: 0;
+  margin: 5px;
 }
 hr {
   z-index: 1;
@@ -88,8 +88,9 @@ hr {
 }
 .container-text {
   z-index: 1;
-  padding: 15px;
+  padding: 8px;
   font-size: 11px;
+  font-weight: bold;
   text-align: center;
   margin: 0 20px 0 20px;
 }
@@ -124,7 +125,7 @@ div.containers > div.container:nth-child(4) > img {
 /* animations */
 @keyframes movement-banner-2-title {
   0% {
-    left: 25%;
+    left: 2%;
   }
   100% {
     left: 0%;
@@ -136,7 +137,7 @@ div.containers > div.container:nth-child(4) > img {
     left: 0%;
   }
   100% {
-    left: 25%;
+    left: 20%;
   }
 }
 
@@ -164,12 +165,20 @@ div.containers > div.container:nth-child(4) > img {
 
 /* responsive */
 @media screen and (max-width: 600px) {
+
+  .fondo{
+    width: 48%;
+    height: 98%;
+    position: relative;
+    z-index: 1;
+    left: -6%;
+  }
   .img-cubo > .banner-2 {
-    width: 60%;
-    height: 60%;
+    width: 98%;
+    height: 72%;
     position: absolute;
-    bottom: 25%;
-    left: 10%;
+    bottom: 15%;
+    left: 1%;
   }
   #banner-2-title {
     width: 100%;
@@ -177,23 +186,29 @@ div.containers > div.container:nth-child(4) > img {
   #banner-2-title p {
     width: 100%;
     margin: 0;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     position: absolute;
-    right: 30%;
+    right: 8%;
   }
 
   .banner-2 > .containers {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    top: 45%;
-    left: 30%;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    top: 8%;
+    left: 0%;
+    width: 400px;
+    height: 400px;
   }
   .container > img {
-    width: 100px;
+    width: 192px;
+    height: 191px;
+  }
+  .container-img {
+    width: 55%;
   }
 
   .container > .container-subtitle {
