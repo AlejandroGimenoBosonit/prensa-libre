@@ -1,28 +1,37 @@
+.panel_b{
+  background-color: var(--background-color);
+}
+.fondo {
+  width: 32%;
+  height: 143%;
+  position: relative; 
+  z-index: 1;
+}
+
+
 .img-cubo {
   right: 0%;
   width: 100%;
   color: var(--white-color);
 }
-.img-cubo > img {
-  width: 30%;
-  height: 100%;
-}
+
 
 .img-cubo > .banner-2 {
   width: 50%;
-  height: 60%;
+  height: 70%;
   position: absolute;
-  bottom: 15%;
-
-  left: 26%;
+  bottom: 7%;
+  left: 22%;
 }
 
 .banner-2 > #banner-2-title {
   position: absolute;
   left: 1%;
 
+  width: 500px;
+
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
 
   display: flex;
@@ -32,13 +41,13 @@
 .banner-2 > .containers {
   position: absolute;
   bottom: 20%;
-
+  left: 4%;
   width: 100%;
   height: auto;
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 90px));
-  column-gap: 10px;
+  column-gap: 20px;
 }
 .containers > .container {
   background-repeat: no-repeat;
@@ -51,15 +60,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  /* margin-bottom: 10px; */
 }
 
 .container > img {
-  width: 150px;
+  width: 170px;
+  height: auto;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 
   opacity: 0;
+}
+
+.container-img {
+  z-index: 1;
+  width: 80%;
+  padding: 10px;
+}
+.container-subtitle {
+  z-index: 1;
+  font-size: 13px;
+  margin: 0;
+}
+hr {
+  z-index: 1;
+  width: 60%;
+}
+.container-text {
+  z-index: 1;
+  padding: 15px;
+  font-size: 11px;
+  text-align: center;
+  margin: 0 20px 0 20px;
 }
 
 .grid-container {
@@ -79,27 +111,7 @@ div.containers > div.container:nth-child(4) > img {
   animation-delay: 0.5s;
 }
 
-.container > .container-img {
-  z-index: 1;
-  width: 50%;
-  padding: 10px;
-}
-.container > .container-subtitle {
-  z-index: 1;
-  font-size: 13px;
-  margin: 0;
-}
-.container > hr {
-  z-index: 1;
-  width: 60%;
-}
-.container > .container-text {
-  z-index: 1;
-  padding: 15px;
-  font-size: 11px;
-  text-align: center;
-  margin: 0 20px 0 20px;
-}
+
 
 .animate-banner-2-title {
   animation: movement-banner-2-title 1s forwards;
@@ -115,13 +127,13 @@ div.containers > div.container:nth-child(4) > img {
     left: 25%;
   }
   100% {
-    left: 50%;
+    left: 0%;
   }
 }
 
 @keyframes inverted-movement-banner-2-title {
   0% {
-    left: 50%;
+    left: 0%;
   }
   100% {
     left: 25%;
