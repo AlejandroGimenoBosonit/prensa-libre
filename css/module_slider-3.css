@@ -1,5 +1,9 @@
+.panel_c{
+  background-image: var(--gradient);
+}
 .img-reloj {
-  position: relative;
+  position: absolute;
+  z-index: 1;
 }
 
 .img-reloj > .banner-3 {
@@ -27,8 +31,8 @@ top: 10%;
 }
 
 .banner-3 > .imagen-fondo {
-position: relative;
-/* top: 1%; */
+  position: relative;
+  top: -10%;
 }
 .agua2 > img {
 position: absolute;
@@ -54,7 +58,7 @@ overflow: hidden;
 width: 40%;
 position: absolute; 
 right: 0; 
-bottom: -40%;
+top: 25%;
 opacity: 0.5;
 }
 
