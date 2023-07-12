@@ -27,6 +27,7 @@
 .banner-2 > #banner-2-title {
   position: absolute;
   left: 1%;
+  bottom: 90%;
   z-index: 1;
   width: 500px;
 
@@ -41,8 +42,8 @@
 
 .banner-2 > .containers {
   position: absolute;
-  bottom: 20%;
-  left: 4%;
+  bottom: 31%;
+  left: 13%;
   width: 100%;
   height: auto;
   height: auto;
@@ -125,7 +126,7 @@ div.containers > div.container:nth-child(4) > img {
 /* animations */
 @keyframes movement-banner-2-title {
   0% {
-    left: 2%;
+    left: 25%;
   }
   100% {
     left: 0%;
@@ -137,7 +138,7 @@ div.containers > div.container:nth-child(4) > img {
     left: 0%;
   }
   100% {
-    left: 20%;
+    left: 25%;
   }
 }
 
@@ -182,6 +183,8 @@ div.containers > div.container:nth-child(4) > img {
   }
   #banner-2-title {
     width: 100%;
+    position: absolute;
+    bottom: 95%;
   }
   #banner-2-title p {
     width: 100%;
@@ -205,7 +208,7 @@ div.containers > div.container:nth-child(4) > img {
   }
   .container > img {
     width: 192px;
-    height: 191px;
+    height: 170px;
   }
   .container-img {
     width: 55%;

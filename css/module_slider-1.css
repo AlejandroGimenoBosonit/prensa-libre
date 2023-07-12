@@ -30,12 +30,6 @@
   font-weight: lighter;
   letter-spacing: 10px;
 }
-
-.banner-1 > .imagen-fondo {
-  /* position: absolute;
-  top: 163%;
-  right: -20%; */
-}
 .reloj-fondo > img {
   width: 60%;
   position: absolute;
