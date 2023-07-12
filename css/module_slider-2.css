@@ -55,7 +55,7 @@
   background-position: center;
   background-size: contain;
   width: 46%;
-  height: 46%;
+  height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,9 +80,13 @@
   font-size: 13px;
   margin: 5px;
 }
-hr {
+.container-hr {
   z-index: 1;
-  width: 60%;
+  width: 80%;
+}
+.sections-hr {
+  z-index: 1;
+  width: 99%;
 }
 .container-text {
   z-index: 1;
