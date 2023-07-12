@@ -13,7 +13,7 @@
   --background-color: #050a1a;
   --black-color: #000000;
 
-  --gradient:  linear-gradient(
+  --gradient: linear-gradient(
     180deg,
     hsl(226deg 68% 6%) 44%,
     hsl(224deg 31% 10%) 54%,
@@ -38,10 +38,6 @@
     hsl(230deg 4% 95%) 98%,
     hsl(0deg 0% 100%) 100%
   );
-
-
-
-
 }
 html,
 body,
