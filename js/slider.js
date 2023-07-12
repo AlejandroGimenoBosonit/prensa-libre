@@ -68,16 +68,3 @@ const selectMultiElements = (id, newClass) => {
     el.className = newClass;
   });
 };
-
-
-const sliderArrow = (label) => {
-
-  // saber en que banner estamos
-  const classElement = document.getElementById('focused').className;
-  console.log(label);
-
-  
-
-
-
-};

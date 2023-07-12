@@ -78,7 +78,7 @@ img {
 
 .cartas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   column-gap: 20px;
 }
 
@@ -123,6 +123,7 @@ img {
   }
   #carta {
     margin-bottom: 10px;
+    width: 100%;
   }
   .play-icon {
     width: 20%;
