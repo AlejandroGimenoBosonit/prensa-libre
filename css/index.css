@@ -13,23 +13,36 @@
   --background-color: #050a1a;
   --black-color: #000000;
 
-  --gradient: linear-gradient(
+  --gradient:  linear-gradient(
     180deg,
-    hsl(226deg 68% 6%) 0%,
-    hsl(226deg 59% 8%) 31%,
-    hsl(227deg 55% 9%) 45%,
-    hsl(227deg 54% 10%) 54%,
-    hsl(226deg 54% 12%) 62%,
-    hsl(226deg 53% 14%) 69%,
-    hsl(226deg 51% 16%) 75%,
-    hsl(226deg 50% 19%) 81%,
-    hsl(233deg 23% 33%) 86%,
-    hsl(237deg 12% 54%) 91%,
-    hsl(238deg 12% 77%) 96%,
+    hsl(226deg 68% 6%) 44%,
+    hsl(224deg 31% 10%) 54%,
+    hsl(225deg 22% 14%) 60%,
+    hsl(226deg 17% 18%) 64%,
+    hsl(227deg 13% 22%) 67%,
+    hsl(227deg 11% 26%) 69%,
+    hsl(228deg 9% 30%) 72%,
+    hsl(228deg 7% 34%) 74%,
+    hsl(228deg 6% 38%) 76%,
+    hsl(229deg 5% 43%) 78%,
+    hsl(229deg 4% 47%) 80%,
+    hsl(229deg 4% 52%) 82%,
+    hsl(229deg 4% 56%) 84%,
+    hsl(229deg 4% 61%) 86%,
+    hsl(229deg 4% 65%) 87%,
+    hsl(229deg 4% 70%) 89%,
+    hsl(229deg 4% 75%) 91%,
+    hsl(229deg 4% 80%) 93%,
+    hsl(230deg 4% 85%) 95%,
+    hsl(230deg 4% 90%) 96%,
+    hsl(230deg 4% 95%) 98%,
     hsl(0deg 0% 100%) 100%
   );
-}
 
+
+
+
+}
 html,
 body,
 .childContainer1,
@@ -38,7 +51,7 @@ body,
 }
 body {
   margin: 0;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 .body-page {
   margin: 0;

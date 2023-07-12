@@ -1,13 +1,12 @@
-.panel_b{
+.panel_b {
   background-color: var(--background-color);
 }
 .fondo {
   width: 32%;
-  height: 143%;
-  position: relative; 
+  height: 119%;
+  position: relative;
   z-index: 1;
 }
-
 
 .img-cubo {
   right: 0%;
@@ -15,23 +14,24 @@
   color: var(--white-color);
 }
 
-
 .img-cubo > .banner-2 {
   width: 50%;
   height: 70%;
   position: absolute;
-  bottom: 7%;
-  left: 22%;
+  bottom: 15%;
+  left: 18%;
 }
 
 .banner-2 > #banner-2-title {
   position: absolute;
   left: 1%;
-
+  bottom: 90%;
+  z-index: 1;
   width: 500px;
 
   margin-bottom: 20px;
-  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-size: 35px;
   font-weight: bold;
 
   display: flex;
@@ -40,35 +40,33 @@
 
 .banner-2 > .containers {
   position: absolute;
-  bottom: 20%;
-  left: 4%;
+  bottom: 31%;
+  left: 13%;
   width: 100%;
   height: auto;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 90px));
-  column-gap: 20px;
+
+  column-gap: 5px;
+  display: flex;
+  flex-direction: row;
 }
 .containers > .container {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
-  width: 100%;
-  height: 100%;
+  width: 46%;
+  height: 46%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 10px; */
 }
 
 .container > img {
-  width: 170px;
-  height: auto;
+  width: 23%;
+  height: 95%;
   position: absolute;
   z-index: 1;
-
   opacity: 0;
 }
 
@@ -80,7 +78,7 @@
 .container-subtitle {
   z-index: 1;
   font-size: 13px;
-  margin: 0;
+  margin: 5px;
 }
 hr {
   z-index: 1;
@@ -88,8 +86,9 @@ hr {
 }
 .container-text {
   z-index: 1;
-  padding: 15px;
+  padding: 8px;
   font-size: 11px;
+  font-weight: bold;
   text-align: center;
   margin: 0 20px 0 20px;
 }
@@ -110,8 +109,6 @@ div.containers > div.container:nth-child(3) > img {
 div.containers > div.container:nth-child(4) > img {
   animation-delay: 0.5s;
 }
-
-
 
 .animate-banner-2-title {
   animation: movement-banner-2-title 1s forwards;
@@ -164,46 +161,90 @@ div.containers > div.container:nth-child(4) > img {
 
 /* responsive */
 @media screen and (max-width: 600px) {
+  .fondo {
+    width: 48%;
+    height: 98%;
+    position: relative;
+    z-index: 1;
+    left: -6%;
+  }
   .img-cubo > .banner-2 {
-    width: 60%;
-    height: 60%;
-    position: absolute;
-    bottom: 25%;
-    left: 10%;
+    width: 98%;
+    height: 72%;
   }
   #banner-2-title {
     width: 100%;
+    position: absolute;
+    bottom: 95%;
   }
   #banner-2-title p {
     width: 100%;
     margin: 0;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     position: absolute;
-    right: 30%;
+    right: 8%;
   }
 
   .banner-2 > .containers {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    top: 45%;
-    left: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 15%;
+    left: -15%;
+    height: 88%;
+  }
+  .container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 46%;
+    height: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .container > img {
-    width: 100px;
+    width: 161px;
+    height: 170px;
+  }
+  .container-img {
+    width: 66%;
   }
 
   .container > .container-subtitle {
-    font-size: 8px;
+    font-size: 13px;
   }
   .container > .container-text {
     font-size: 8px;
     margin: 0;
   }
 }
+
+@media screen and (max-width: 359px) {
+  .banner-2 {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    bottom: 24%;
+    left: -4%;
+  }
+  .container {
+    width: 86%;
+    height: 94%;
+    column-gap: 5px;
+  }
+  .container > img {
+    width: 38%;
+    height: 37%;
+  }
+}
+
 @media screen and (min-width: 800px) and (max-width: 900px) {
   .banner-2 > .containers {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));

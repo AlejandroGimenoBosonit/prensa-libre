@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
@@ -16,18 +23,30 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
 
-    
-    <script language="JavaScript" type="text/javascript" src="../js/navbar.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/slider.js"></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="../js/navbar.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="../js/slider.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="../js/slider_responsive.js"
+    ></script>
     <title>Guatemala: Es Hora de Actuar</title>
   </head>
   <body>
     <div class="navbar">
       <img
         class="navbar-logo"
-            src="../assets/guatemala-no-se-detiene-logo.svg"
-            alt="Guatemala logo"
-        />
+        src="../assets/guatemala-no-se-detiene-logo.svg"
+        alt="Guatemala logo"
+      />
       <div class="navbar-list" id="myTopnav">
         <a href="#"></a>
         <a class="navbar-list-element" href="#section-1"
@@ -45,182 +64,216 @@
     <div id="body-page" class="body-page">
       <div id="container">
         <div class="vl"></div>
-        <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_a" checked/>
-        <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_b"/>
-        <input onclick="clicked(this.id)" hidden class="ellipse" type="radio" name="carousel-control" id="button_c"/>
+        <input
+          onclick="clicked(this.id)"
+          hidden
+          class="ellipse"
+          type="radio"
+          name="carousel-control"
+          id="button_a"
+          checked
+        />
+        <input
+          onclick="clicked(this.id)"
+          hidden
+          class="ellipse"
+          type="radio"
+          name="carousel-control"
+          id="button_b"
+        />
+        <input
+          onclick="clicked(this.id)"
+          hidden
+          class="ellipse"
+          type="radio"
+          name="carousel-control"
+          id="button_c"
+        />
         <div class="vl"></div>
-        
+
         <div id="navigation">
           <div class="vl"></div>
           <label for="button_a" class="label_a"></label>
           <label for="button_b" class="label_b"></label>
           <label for="button_c" class="label_c"></label>
           <div class="vl"></div>
-        </div> 
-                
+        </div>
+
+        <div class="navigation-alternative">
+          <span id="arrowUp" onclick="fUp()" for="arrowUp" class="arrowUp"
+            ><i class="fa-solid fa-chevron-up fa-3x"></i
+          ></span>
+          <span
+            id="arrowDown"
+            onclick="fDown()"
+            for="arrowDown"
+            class="arrowDown"
+            ><i id="arrow-down" class="fa-solid fa-chevron-down fa-3x"></i
+          ></span>
+        </div>
+
         <div class="carousel" id="carousel">
-            <div class="p-wrapper">
-                <section class="panel_a">
-                  <div id="slider1" class="img-section img-space">
-                    <div class="banner-1">
-                      <div id="banner-1-title" class="animate-title">
-                        <p style="margin: 0" class="titulo">GUATEMALA</p>
-                        <p style="margin: 0" class="subtitulo">ES HORA DE ACTUAR</p>
-                      </div>
-                      <div class="imagen-fondo">
-                        <div class="img-container reloj-fondo">
-                          <img
-                            src="../assets/banner-1/relojfondo.png"
-                            alt="relojfondo"
-                          />
-                        </div>
-                        <div class="img-container bote">
-                          <img id="bote-img" class="animate-bote" src="../assets/banner-1/bote.png" alt="bote" />
-                        </div>
-                        <div class="img-container agua">
-                          <img src="../assets/banner-1/agua.png" alt="agua" />
-                        </div>
-                      </div>
+          <div id="sld" class="p-wrapper">
+            <section id="slick-list" class="panel_a">
+              <div id="slider1" class="img-section img-space">
+                <div class="banner-1">
+                  <div id="banner-1-title" class="animate-title">
+                    <p style="margin: 0" class="titulo">GUATEMALA</p>
+                    <p style="margin: 0" class="subtitulo">ES HORA DE ACTUAR</p>
+                  </div>
+                  <div class="imagen-fondo">
+                    <div class="img-container reloj-fondo">
+                      <img
+                        src="../assets/banner-1/relojfondo.png"
+                        alt="relojfondo"
+                      />
                     </div>
-                </section>
-
-                <section id="metas" class="panel_b">
-                  <img class="fondo" src="../assets/fondo-banners/cubo_grande.png" alt="cubo" />
-                  <div id="slider2" class="img-section img-cubo">
-                   
-                    <div class="banner-2">
-
-                      <div id="banner-2-title" class="animate-banner-2-title">
-                        <p>Las metas que no nos detienen</p>
-                      </div>
-      
-                      <div class="containers">
-                        <div class="container">
-                          <img id="img-grid" class="grid-container" src="../assets/banner-2/cuadro2.png" alt="cuadro">
-                          <div class="container-img">
-                            <img
-                              src="../assets/banner-2/contenedor.png"
-                              alt="contenedor"
-                            />
-                          </div>
-      
-                          <p class="container-subtitle">¡Más exportaciones!</p>
-                          <hr />
-                          <p class="container-text">
-                            Pasar de US$14 mil a US$19 mil millones al 2030
-                          </p>
-                        </div>
-
-                        <div class="container">
-                          <img id="img-grid" class="grid-container" src="../assets/banner-2/cuadro2.png" alt="cuadro">
-                          <div class="container-img">
-                            <img
-                              style="width: 90%"
-                              src="../assets/banner-2/moneda.png"
-                              alt="moneda"
-                            />
-                          </div>
-      
-                          <p class="container-subtitle">¡Más capital extrangero!</p>
-                          <hr />
-                          <p class="container-text">
-                            Pasar de US$900 millones a US$2100 millones al 2030
-                          </p>
-                        </div>
-
-                        <div class="container">
-                          <img id="img-grid" class="grid-container" src="../assets/banner-2/cuadro2.png" alt="cuadro">
-                          <div class="container-img">
-                            <img
-                              src="../assets/banner-2/personas.png"
-                              alt="personas"
-                            />
-                          </div>
-                          <p class="container-subtitle">¡Más plazas de trabajo!</p>
-                          <hr />
-                          <p class="container-text">
-                            Generar 2.5 millones de empleos nuevos al 2030
-                          </p>
-                        </div>
-                        
-                        <div class="container">
-                          <img id="img-grid" class="grid-container" src="../assets/banner-2/cuadro2.png" alt="cuadro">
-                          <div class="container-img">
-                            <img src="../assets/banner-2/dinero.png" alt="dinero" />
-                          </div>
-      
-                          <p class="container-subtitle">¡Más ingresos!</p>
-                          <hr />
-                          <p class="container-text">
-                            Pasar de un PIB per capita de US$9 mil a US$14 mil 500
-                          </p>
-                        </div>
-                      </div>
+                    <div class="img-container bote">
+                      <img
+                        id="bote-img"
+                        class="animate-bote"
+                        src="../assets/banner-1/bote.png"
+                        alt="bote"
+                      />
+                    </div>
+                    <div class="img-container agua">
+                      <img src="../assets/banner-1/agua.png" alt="agua" />
                     </div>
                   </div>
-                </section>
+                </div>
+              </div>
+            </section>
 
+            <section id="slick-list" class="panel_b">
+              <img
+                class="fondo"
+                src="../assets/fondo-banners/cubo_grande.png"
+                alt="cubo"
+              />
+              <div id="slider2" class="img-section img-cubo">
+                <div class="banner-2">
+                  <div id="banner-2-title" class="animate-banner-2-title">
+                    <p>Las metas que no nos detienen</p>
+                  </div>
 
-                <section class="panel_c">
-                  <div id="slider3" class="img-section img-reloj">
-                    <img src="../assets/fondo-banners/reloj_2.png" alt="reloj" />
-                    <div id="banner-3" class="banner-3">
-                      <div id="banner-3-title" class="texto3 animate-banner-3-title">
-                        <p style="margin: 0" class="titulo3">
-                          El AVANCE DE GUATEMALA HACIA LAS METAS QUE TODOS TENEMOS
-                          COMO EQUIPO ESTÁ AQUÍ
-                        </p>
+                  <div class="containers">
+                    <div class="container">
+                      <img
+                        id="img-grid"
+                        class="grid-container"
+                        src="../assets/banner-2/cuadro2.png"
+                        alt="cuadro"
+                      />
+                      <div class="container-img">
+                        <img
+                          src="../assets/banner-2/contenedor.png"
+                          alt="contenedor"
+                        />
                       </div>
-                      <div class="imagen-fondo">
-                        <div class="img-container3 agua2">
-                          <img src="../assets/banner-3/agua.png" alt="agua2" />
-                        </div>
-                        <div class="img-container3 bote2">
-                          <img id="bote2-img" class="animate-bote2" src="../assets/banner-3/bote2.png" alt="bote2" />
-                        </div>
+
+                      <p class="container-subtitle">¡Más exportaciones!</p>
+                      <hr />
+                      <p class="container-text">
+                        Pasar de US$14 mil a US$19 mil millones al 2030
+                      </p>
+                    </div>
+
+                    <div class="container">
+                      <img
+                        id="img-grid"
+                        class="grid-container"
+                        src="../assets/banner-2/cuadro2.png"
+                        alt="cuadro"
+                      />
+                      <div class="container-img">
+                        <img
+                          style="width: 90%"
+                          src="../assets/banner-2/moneda.png"
+                          alt="moneda"
+                        />
                       </div>
+
+                      <p class="container-subtitle">¡Más capital extrangero!</p>
+                      <hr />
+                      <p class="container-text">
+                        Pasar de US$900 millones a US$2100 millones al 2030
+                      </p>
+                    </div>
+
+                    <div class="container">
+                      <img
+                        id="img-grid"
+                        class="grid-container"
+                        src="../assets/banner-2/cuadro2.png"
+                        alt="cuadro"
+                      />
+                      <div class="container-img">
+                        <img
+                          src="../assets/banner-2/personas.png"
+                          alt="personas"
+                        />
+                      </div>
+                      <p class="container-subtitle">¡Más plazas de trabajo!</p>
+                      <hr />
+                      <p class="container-text">
+                        Generar 2.5 millones de empleos nuevos al 2030
+                      </p>
+                    </div>
+
+                    <div class="container">
+                      <img
+                        id="img-grid"
+                        class="grid-container"
+                        src="../assets/banner-2/cuadro2.png"
+                        alt="cuadro"
+                      />
+                      <div class="container-img">
+                        <img src="../assets/banner-2/dinero.png" alt="dinero" />
+                      </div>
+
+                      <p class="container-subtitle">¡Más ingresos!</p>
+                      <hr />
+                      <p class="container-text">
+                        Pasar de un PIB per capita de US$9 mil a US$14 mil 500
+                      </p>
                     </div>
                   </div>
-                </section>  
-            </div>
-        </div>            
-              
-    </div>
+                </div>
+              </div>
+            </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <section id="slick-list" class="panel_c">
+              <div id="slider3" class="img-section img-reloj">
+                <img src="../assets/fondo-banners/reloj_2.png" alt="reloj" />
+                <div id="banner-3" class="banner-3">
+                  <div
+                    id="banner-3-title"
+                    class="texto3 animate-banner-3-title"
+                  >
+                    <p style="margin: 0" class="titulo3">
+                      EL AVANCE DE GUATEMALA HACIA LAS METAS QUE TODOS TENEMOS
+                      COMO EQUIPO ESTÁ AQUÍ
+                    </p>
+                  </div>
+                  <div class="imagen-fondo">
+                    <div class="img-container3 agua2">
+                      <img src="../assets/banner-3/agua.png" alt="agua2" />
+                    </div>
+                    <div class="img-container3 bote2">
+                      <img
+                        id="bote2-img"
+                        class="animate-bote2"
+                        src="../assets/banner-3/bote2.png"
+                        alt="bote2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
 
       <div class="sections">
         <div id="section-1" class="empiece-aqui">
@@ -243,7 +296,6 @@
             </h2>
           </div>
         </div>
-
 
         <div id="section-2" class="turismo">
           <div class="titulo-mini">
@@ -541,7 +593,7 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   </body>
 </html>

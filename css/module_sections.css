@@ -10,7 +10,7 @@ hr {
 
   position: absolute;
 
-  top: 77%;
+  top: 74%;
   left: 0;
   right: 0;
 
@@ -78,7 +78,7 @@ img {
 
 .cartas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   column-gap: 20px;
 }
 
@@ -105,10 +105,9 @@ img {
 
 @media screen and (max-width: 600px) {
   .sections {
-    margin-left: 10px;
-    margin-right: 10px;
-    position: absolute;
-    left: 16%;
+   width: 100%;
+   position: absolute;
+   top: 66%;
   }
   .titulo-principal h2 {
     font-size: 18px;
@@ -124,6 +123,7 @@ img {
   }
   #carta {
     margin-bottom: 10px;
+    width: 100%;
   }
   .play-icon {
     width: 20%;
@@ -132,4 +132,11 @@ img {
     top: 20%;
     right: 40%;
   }
+}
+@media screen and (max-width: 360px) {
+  .sections {
+    width: 100%;
+    position: absolute;
+    top: 91%;
+   }
 }

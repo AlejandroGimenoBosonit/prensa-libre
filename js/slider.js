@@ -60,6 +60,8 @@ const clicked = (id) => {
   }
 };
 
+
+
 const selectMultiElements = (id, newClass) => {
   const elements = document.querySelectorAll(id);
   elements.forEach((el) => {
