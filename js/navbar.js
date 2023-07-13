@@ -13,12 +13,12 @@ $(document).ready(function (e) {
   // e.preventDefault();
   const element = ".navbar-list-element";
   $(element).click(function () {
-    scrollToElement($(this).attr("href"), 2000);
+    scrollToElement($(this).attr("href"), 3000);
   });
 });
 
 var scrollToElement = function (el, ms) {
-  var speed = ms ? ms : 600;
+  var speed = ms ? ms : 3000;
   $("html,body").animate(
     {
       scrollTop: $(el).offset().top,

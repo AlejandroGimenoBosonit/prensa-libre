@@ -103,40 +103,4 @@ img {
   right: 40%;
 }
 
-@media screen and (max-width: 600px) {
-  .sections {
-    width: 100%;
-    position: absolute;
-    top: 66%;
-  }
-  .titulo-principal h2 {
-    font-size: 18px;
-    text-overflow: ellipsis;
-    overflow: hidden;
 
-    display: -webkit-box !important;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-  .cartas-turismo {
-    grid-template-columns: 1fr;
-  }
-  #carta {
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  .play-icon {
-    width: 20%;
-    filter: brightness(80%);
-    position: absolute;
-    top: 20%;
-    right: 40%;
-  }
-}
-@media screen and (max-width: 360px) {
-  .sections {
-    width: 100%;
-    position: absolute;
-    top: 91%;
-  }
-}

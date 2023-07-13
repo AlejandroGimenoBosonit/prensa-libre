@@ -1,4 +1,5 @@
 var showed_box = 0;
+console.log(showed_box);
 
 function fUp() {
   document.getElementById("arrow-down").style.color = "white";
