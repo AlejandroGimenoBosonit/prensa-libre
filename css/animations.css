@@ -39,7 +39,7 @@
 /* SLIDER 2 */
 @keyframes movement-banner-2-title {
   0% {
-    left: 30%;
+    left: 35%;
   }
   100% {
     left: 0%;
@@ -51,7 +51,7 @@
     left: 0%;
   }
   100% {
-    left: 30%;
+    left: 35%;
   }
 }
 

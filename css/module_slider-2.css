@@ -43,10 +43,9 @@
 }
 .banner-2-responsive > #banner-2-title{
   position: absolute;
-  left: 19%;
+  width: 100%;
   bottom: 96%;
   z-index: 1;
-  width: 536px;
   margin-bottom: 20px;
   font-size: 27px;
   font-weight: bold;
@@ -122,6 +121,7 @@ left: 28%;
   font-weight: bold;
   text-align: center;
   margin: 0 3px 0 3px;
+  width: 90%;
 }
 
 
