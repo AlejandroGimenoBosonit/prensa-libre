@@ -1,35 +1,8 @@
 /* IPAD */
 @media only screen and (max-width: 811px) {
- 
-
-
-  #navigation{
-    display: none;
-  }
-  .navigation-alternative{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 50%;
-    top: 6%;
-  }
-
-
-
   .p-wrapper{
     position: absolute;
     top: 5px;
-  }
-
-  .sections {
-    width: 100%;
-    position: absolute;
-    top: 56%;
   }
   .titulo-principal h2 {
     font-size: 18px;
@@ -54,34 +27,12 @@
     top: 20%;
     right: 40%;
   }
-  .img-cubo > .banner-2 {
-    width: 79%;
-    height: 70%;
-    position: absolute;
-    bottom: 19%;
-    left: 1%;
-  }
   .fondo {
     width: 48%;
     height: 98%;
     position: relative;
     z-index: 1;
     left: -6%;
-  }
-  .img-cubo > .banner-2 {
-    width: 98%;
-    height: 72%;
-  }
-  #banner-2-title p {
-    width: 100%;
-    margin: 0;
-    font-size: 19px;
-    font-weight: bold;
-
-    display: flex;
-    justify-content: flex-start;
-
-    position: absolute;
   }
   .grid-container {
     animation: fadeIn-inverse 0.5s ease-in both;
@@ -96,109 +47,7 @@
   }
 }
 
-@media screen and (min-width: 811px) {
-
-  .navigation-alternative{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 718px) {
-  .navbar {
-    padding:0;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
-  .navbar-logo {
-    width: 30%;
-    /* margin-left: 70px; */
-  }
-  .navbar-list a:not(:first-child) {
-    display: none;
-  }
-  .navbar-list div.icon {
-    background-color: rgb(28, 32, 32);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 47px;
-    height: 47px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .icon i {
-    color: var(--white-color);
-  }
-  #myTopnavResponsive{
-    background-color: black;
-    font-family: "Merriweather", serif;
-  
-    position: absolute;
-    z-index: -5;
-    width: 100vw;
-    height: 100vw;
-    
-    top: 79%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-
-    transition: 0.8s ease-in-out;
-    -webkit-transition: 0.8s ease-in-out;
-  
-  }
-}
 @media screen and (max-width: 600px) {
-  .navbar {
-    .navbar {
-      padding:0;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-    }
-  }
-  .navbar-logo {
-    width: 30%;
-    /* margin-left: 70px; */
-  }
-  .navbar-list a:not(:first-child) {
-    display: none;
-  }
-  .navbar-list div.icon {
-    background-color: rgb(28, 32, 32);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 47px;
-    height: 47px;
-  }
-  .icon i {
-    color: var(--white-color);
-  }
-  #myTopnavResponsive{
-    background-color: black;
-    font-family: "Merriweather", serif;
-  
-    position: absolute;
-    z-index: -5;
-    width: 100vw;
-    height: 100vw;
-    
-    top: 79%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-
-    transition: 0.8s ease-in-out;
-    -webkit-transition: 0.8s ease-in-out;
-  
-  }
   
   .img-space > .banner-1 {
     width: 100%;
@@ -266,121 +115,3 @@ font-size: 19px;
   }
 }
 
-@media screen and (max-width: 601px){
-  .navbar {
-    padding:0;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
-  .navbar-logo {
-    width: 30%;
-    /* margin-left: 70px; */
-  }
-  .navbar-list a:not(:first-child) {
-    display: none;
-  }
-  .navbar-list div.icon {
-    background-color: rgb(28, 32, 32);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 47px;
-    height: 47px;
-  }
-  .icon i {
-    color: var(--white-color);
-  }
-  #myTopnavResponsive{
-    background-color: black;
-    font-family: "Merriweather", serif;
-  
-    position: absolute;
-    z-index: -5;
-    width: 100vw;
-    height: 100vw;
-    
-    top: 79%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-
-    transition: 0.8s ease-in-out;
-    -webkit-transition: 0.8s ease-in-out;
-  
-  }
-}
-@media only screen and (max-width: 413px) {
-  .sections {
-    width: 100%;
-    position: absolute;
-    top: 67%;
-  }
-  .navigation-alternative{
-
-    height: 59%;
-    top: 6%;
-  }
-  .banner-2 > .containers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    top: 15%;
-    left: 3%;
-    height: 88%;
-  }
-  .container {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 46%;
-    height: 46%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container > img {
-    width: 161px;
-    height: 170px;
-  }
-  .container-img {
-    width: 66%;
-  }
-
-  .container > .container-subtitle {
-    font-size: 13px;
-  }
-  .container > .container-text {
-    font-size: 8px;
-    margin: 0;
-  }
-}
-@media only screen and (max-width: 385px) and (max-width: 855px) {
-  .sections {
-    width: 100%;
-    position: absolute;
-    top: 70%;
-  }
-}
-
-@media only screen and (max-width: 361px)and (min-width: 801px){
-  .navigation-alternative{
-    height: 68%;
-    top: 6%;
-  }  
-}
-
-@media only screen and (max-width: 361px) and (max-width: 641px){
-  .sections {
-    width: 100%;
-    position: absolute;
-    top: 80%;
-  }
-  .navigation-alternative{
-    height: 68%;
-    top: 6%;
-  }
-}

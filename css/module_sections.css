@@ -4,24 +4,25 @@ hr {
   opacity: 0.4;
 }
 /* secciones */
-.sections {
+#sections {
   background: var(--white-color) 0% 0% no-repeat padding-box;
   border-radius: 20px 20px 0px 0px;
 
-  position: absolute;
-
-  top: 74%;
-  left: 0;
-  right: 0;
-
   z-index: 3;
-  width: 60%;
+
   height: auto;
 
   margin-left: auto;
   margin-right: auto;
 
   padding: 5px 30px 0 30px;
+}
+.sections {
+  position: absolute;
+  width: 60%;
+  top: 67%;
+  left: 0;
+  right: 0;
 }
 
 [id*="section-"] {
@@ -103,4 +104,9 @@ img {
   right: 40%;
 }
 
-
+/* responsive */
+.responsive-sections {
+  width: 100%;
+  position: absolute;
+  top: 85%;
+}

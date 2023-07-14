@@ -23,13 +23,14 @@
   color: var(--white-color);
   position: relative;
   font-size: 70px;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 #banner-1-title > .subtitulo {
   color: var(--blue-subtitle);
   font-size: 29px;
   font-weight: lighter;
   letter-spacing: 10px;
+  font-family: "Merriweather Sans", sans-serif;
 }
 .reloj-fondo > img {
   width: 60%;
@@ -38,7 +39,7 @@
   bottom: 1%;
   z-index: 0;
 }
-.bote{
+.bote {
   top: 100%;
 }
 .bote > img {
@@ -48,7 +49,7 @@
   z-index: 2;
   right: 19%;
 }
-.agua{
+.agua {
   top: 100%;
 }
 .agua > img {
@@ -73,42 +74,5 @@
 
 .animate-title-2 {
   animation: inverted-movement-title 1s forwards;
-}
-
-/* animations */
-@keyframes movement-boat {
-  0% {
-    right: 19%;
-  }
-  100% {
-    right: 20%;
-  }
-}
-
-@keyframes inverted-movement-boat {
-  0% {
-    right: 20%;
-  }
-  100% {
-    right: 19%;
-  }
-}
-
-@keyframes movement-title {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: 52%;
-  }
-}
-
-@keyframes inverted-movement-title {
-  0% {
-    left: 52%;
-  }
-  100% {
-    left: 100%;
-  }
 }
 
