@@ -76,6 +76,9 @@ function responsiveFunc() {
   navbar.classList.remove("no-responsive");
   navbar.classList.add("responsive");
 
+  var myTopNav = document.getElementById("myTopnavResponsive");
+  myTopNav.style.display="flex";
+
   // navegation -> navigation-alternative
   var navigation = document.getElementById("navigation");
   navigation.style.display = "none";

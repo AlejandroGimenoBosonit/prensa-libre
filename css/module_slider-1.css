@@ -1,6 +1,7 @@
 .img-space {
   position: relative;
   background-color: var(--background-color);
+  top: -1%;
 }
 
 .img-space > .banner-1 {

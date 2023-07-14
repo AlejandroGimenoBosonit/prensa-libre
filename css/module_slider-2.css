@@ -12,12 +12,19 @@
   width: 100%;
   color: var(--white-color);
 }
+
+#img-grid{
+  width: 258px;
+height: 278px;
+}
 #banner-2{
   width: 100%;
   height: 70%;
   position: absolute;
   bottom: 15%;
   font-family: "Merriweather", serif;
+  display: flex;
+justify-content: center;
  
 }
 .banner-2{
@@ -28,10 +35,10 @@
 }
 .banner-2 > #banner-2-title{
   position: absolute;
-  left: 15%;
+  /* left: 15%; */
   bottom: 90%;
   z-index: 1;
-  width: 536px;
+  width: fit-content;
 
   margin-bottom: 20px;
   
@@ -43,21 +50,22 @@
 }
 .banner-2-responsive > #banner-2-title{
   position: absolute;
-  width: 100%;
+  width: fit-content;
   bottom: 96%;
   z-index: 1;
   margin-bottom: 20px;
-  font-size: 27px;
+  /* font-size: 27px; */
   font-weight: bold;
   display: flex;
   justify-content: center;
 }
 #containers{
-  position: absolute;
+  
+  /* position: absolute; */
   z-index: 1;
   column-gap: 5px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 .containers{
   width: 50%;
@@ -66,13 +74,15 @@
   justify-content: center;
 }
 .containers-responsive{
+  background-color: yellow;
   flex-wrap: wrap;
-  
-  width: 67%;
-left: 28%;
+  width: 55%;
+  height: 100%;
+  justify-content: center;
 }
 .containers-responsive > #container{
-  width: 33%;
+  background-color: red;
+width: 33%;
 }
 .containers-responsive > #container img {
   height: 98%;
@@ -92,7 +102,6 @@ left: 28%;
   text-align: center;
 }
 #container > img {
-  height: 89%;
   position: absolute;
   z-index: 1;
   border-radius: 18px;
