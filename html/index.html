@@ -4,8 +4,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -22,7 +20,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/index.css" />
-
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="../js/screen.js"
+    ></script>
     <script
       language="JavaScript"
       type="text/javascript"
@@ -33,17 +35,17 @@
       type="text/javascript"
       src="../js/slider.js"
     ></script>
+
     <title>Guatemala: Es Hora de Actuar</title>
   </head>
   <body>
-
-    <div class="navbar">
+    <div id="pl-navbar" class="navbar no-responsive">
       <img
         class="navbar-logo"
         src="../assets/guatemala-no-se-detiene-logo.svg"
         alt="Guatemala logo"
       />
-      <div class="navbar-list" id="myTopnav">
+      <div id="myTopnav" class="navbar-list" id="myTopnav">
         <a href="#"></a>
         <a class="navbar-list-element" href="#section-1"
           >|&nbsp; Empiece Aqui</a
@@ -56,28 +58,28 @@
           <i class="fa fa-bars fa-2x"></i>
         </div>
       </div>
-
-
-
-
-
       <div id="myTopnavResponsive" class="hide">
-        
         <a id="responsive-link" class="navbar-list-element" href="#section-1"
           >Empiece Aqui</a
         >
         <hr class="navbar-separator" />
-        <a id="responsive-link" class="navbar-list-element" href="#metas">Las Metas</a>
+        <a id="responsive-link" class="navbar-list-element" href="#metas"
+          >Las Metas</a
+        >
         <hr class="navbar-separator" />
-        <a id="responsive-link" class="navbar-list-element" href="#section-4">Historias</a>
+        <a id="responsive-link" class="navbar-list-element" href="#section-4"
+          >Historias</a
+        >
         <hr class="navbar-separator" />
-        <a id="responsive-link" class="navbar-list-element" href="#section-5">Columnas</a>
+        <a id="responsive-link" class="navbar-list-element" href="#section-5"
+          >Columnas</a
+        >
         <hr class="navbar-separator" />
-        <a id="responsive-link" class="navbar-list-element" href="">Quiero saber mas</a>
-        
+        <a id="responsive-link" class="navbar-list-element" href=""
+          >Quiero saber mas</a
+        >
       </div>
     </div>
-
 
     <div id="body-page" class="body-page">
       <div id="container">
@@ -109,17 +111,7 @@
         />
         <div class="vl"></div>
 
-
-
-
-
-
-
-
-
-
-
-        <div id="navigation">
+        <div id="navigation" class="navigation">
           <div class="vl"></div>
           <label for="button_a" class="label_a"></label>
           <label for="button_b" class="label_b"></label>
@@ -127,7 +119,7 @@
           <div class="vl"></div>
         </div>
 
-        <div class="navigation-alternative">
+        <div id="navigation-alternative" class="navigation-alternative">
           <span id="arrowUp" onclick="fUp()" for="arrowUp" class="arrowUp"
             ><i class="fa-solid fa-chevron-up fa-3x"></i
           ></span>
@@ -179,16 +171,15 @@
                 alt="cubo"
               />
               <div id="slider2" class="img-section img-cubo">
-                <div class="banner-2">
+                <div id="banner-2" class="banner-2">
                   <div id="banner-2-title" class="animate-banner-2-title">
                     <p>Las metas que no nos detienen</p>
                   </div>
 
-                  <div class="containers">
-                    <div class="container">
+                  <div id="containers" class="containers">
+                    <div class="grid-container" id="container">
                       <img
                         id="img-grid"
-                        class="grid-container"
                         src="../assets/banner-2/Rectangle9.png"
                         alt="cuadro"
                       />
@@ -206,11 +197,10 @@
                       </p>
                     </div>
 
-                    <div class="container">
+                    <div class="grid-container" id="container">
                       <img
                         id="img-grid"
-                        class="grid-container"
-                        src="../assets/banner-2/cuadro2.png"
+                        src="../assets/banner-2/Rectangle9.png"
                         alt="cuadro"
                       />
                       <div class="container-img">
@@ -228,11 +218,10 @@
                       </p>
                     </div>
 
-                    <div class="container">
+                    <div class="grid-container" id="container">
                       <img
                         id="img-grid"
-                        class="grid-container"
-                        src="../assets/banner-2/cuadro2.png"
+                        src="../assets/banner-2/Rectangle9.png"
                         alt="cuadro"
                       />
                       <div class="container-img">
@@ -248,11 +237,10 @@
                       </p>
                     </div>
 
-                    <div class="container">
+                    <div class="grid-container" id="container">
                       <img
                         id="img-grid"
-                        class="grid-container"
-                        src="../assets/banner-2/cuadro2.png"
+                        src="../assets/banner-2/Rectangle9.png"
                         alt="cuadro"
                       />
                       <div class="container-img">
@@ -303,7 +291,7 @@
         </div>
       </div>
 
-      <div class="sections">
+      <div id="sections" class="sections">
         <div id="section-1" class="empiece-aqui">
           <div class="titulo-mini">
             <p class="titulo-section">Empiece aquí</p>

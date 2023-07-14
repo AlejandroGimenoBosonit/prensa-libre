@@ -1,24 +1,27 @@
 /* navbar */
-.navbar {
+#pl-navbar {
   background-color: var(--black-color);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   width: 100%;
   height: 50px;
   position: absolute;
-z-index: 2;
+  z-index: 2;
 }
 
-.navbar-logo {
+.no-responsive {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.no-responsive > .navbar-logo {
   width: 6%;
   height: auto;
 }
-.navbar-list {
+.no-responsive > .navbar-list {
   overflow: hidden;
 }
-.navbar-list-element {
+.navbar-list > .navbar-list-element {
   float: left;
   color: var(--white-color);
   text-align: center;
@@ -26,28 +29,86 @@ z-index: 2;
   text-decoration: none;
   font-size: 20px;
 }
-.navbar-list .icon {
+.no-responsive > .navbar-list > .icon {
   display: none;
 }
 
-#myTopnavResponsive{
+.no-responsive > .icon i {
+  color: var(--white-color);
+}
+
+#myTopnavResponsive {
   display: none;
 }
 
-.navbar-separator{
+.navbar-separator {
   width: 70%;
-position: initial;
-align-self: center;
+  position: initial;
+  align-self: center;
 }
-#myTopnavResponsive > a{
+#myTopnavResponsive > a {
   margin: 10px;
+  text-decoration: none;
+  color: var(--white-color);
 }
 
-.show{
+/* responsive navbar */
+.show {
   transform: translateX(+150%);
-  -webkit-transform:translateX(+150%);
+  -webkit-transform: translateX(+150%);
 }
-.hide{
+.hide {
   transform: translateX(-150%);
-  -webkit-transform:translateX(-150%);
+  -webkit-transform: translateX(-150%);
+}
+
+.responsive {
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.responsive > .navbar-logo {
+  width: 30%;
+}
+
+.responsive > .navbar-list a:not(:first-child) {
+  display: none;
+}
+
+.responsive > .navbar-list div.icon {
+  background-color: rgb(28, 32, 32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.responsive > .icon i {
+  color: var(--white-color);
+}
+
+#myTopnavResponsive {
+  background-color: black;
+  font-family: "Merriweather", serif;
+
+  position: absolute;
+  z-index: -5;
+  width: 100vw;
+  height: 50vw;
+
+  top: 79%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
 }

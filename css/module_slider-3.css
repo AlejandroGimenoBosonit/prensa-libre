@@ -5,7 +5,6 @@
   position: absolute;
   z-index: 1;
 }
-
 .img-reloj > .banner-3 {
   width: 100%;
   height: 90%;
@@ -25,7 +24,7 @@
 }
 #banner-3-title > .titulo3 {
   color: var(--white-color);
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   position: absolute;
   top: 10%;
 }
@@ -78,42 +77,3 @@
 .animate-banner-3-title-inverted {
   animation: inverted-movement-banner-3-title 2s forwards;
 }
-
-/* animations */
-@keyframes movement-bote2 {
-  0% {
-    right: 0%;
-  }
-  100% {
-    right: 10%;
-  }
-}
-
-@keyframes movement-bote2-2 {
-  0% {
-    right: 10%;
-  }
-  100% {
-    right: 0%;
-  }
-}
-
-/* 45 */
-@keyframes movement-banner-3-title {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 45%;
-  }
-}
-
-@keyframes inverted-movement-banner-3-title {
-  0% {
-    left: 45%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
