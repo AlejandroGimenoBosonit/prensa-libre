@@ -6,17 +6,17 @@ hr {
 [id*="section-"] {
   margin-bottom: 40px;
 }
-.titulo-mini p{
+.titulo-mini p {
   font-size: 16px;
   padding: 15px 0 15px 0;
-  color: var(--blue-indicator); 
+  color: var(--blue-indicator);
 }
 
 .sections-desktop {
   background: var(--white-color) 0% 0% no-repeat padding-box;
   z-index: 3;
   position: absolute;
-  top: 72%;
+  top: 78%;
   left: 0;
   right: 0;
   width: 60%;
@@ -27,10 +27,7 @@ hr {
 
   padding: 5px 30px 0 30px;
 }
-/* .sections-desktop .empiece-aqui .titulo-mini p {
-  
-} */
-.sections-desktop .empiece-aqui .image{
+.sections-desktop .empiece-aqui .image {
   width: 100%;
   height: auto;
 }
@@ -39,16 +36,17 @@ hr {
   font-size: 25px;
   font-weight: normal;
 }
-
-/* 
-.cartas-turismo {
+.sections-desktop .turismo .cartas-turismo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
-
   margin-bottom: 20px;
 }
-
+.titulo-mini-carta > p {
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--blue-indicator);
+}
 .titulo-carta-texto {
   font-size: 20px;
   font-weight: bold;
@@ -62,41 +60,31 @@ hr {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-
 .titulo-mini-carta > p {
   font-size: 10px;
   font-weight: bold;
   color: var(--blue-indicator);
 }
-
 .cartas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   column-gap: 20px;
 }
-
-.titulo-mini-carta > .titulo-section {
-  font-weight: normal;
-}
-
-.titulo-carta > p {
-  font-size: 15px;
-}
-
 .fake-video {
   position: relative;
 }
-.fake-video > img {
+.fake-video img {
   filter: brightness(50%);
 }
-.fake-video > .play-icon {
+.fake-video .play-icon {
   filter: brightness(80%);
   position: absolute;
   top: 20%;
   right: 40%;
 }
 
-.responsive-sections {
+.sections-tablet,
+.sections-mobile {
   background: var(--white-color) 0% 0% no-repeat padding-box;
   z-index: 3;
   position: absolute;
@@ -105,4 +93,4 @@ hr {
   right: 0;
   height: auto;
   padding: 5px 30px 0 30px;
-} */
+}
