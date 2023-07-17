@@ -24,73 +24,105 @@ function debounce(func, wait, immediate) {
 }
 
 function deviceCheck() {
-  var body = document.body;
+  
+  refreshClassList("banner-1");
+  refreshClassList("banner-2");
+  refreshClassList("banner-3");
+  refreshClassList("sections");
+  
   const isMobile = window.matchMedia("(max-width: 767px)");
-  const isTablet = window.matchMedia("(max-width: 1024px)");
-  const isDesktop = window.matchMedia("(min-width: 1025px)");
+  const isTablet = window.matchMedia("(max-width: 1092px)");
+  const isDesktop = window.matchMedia("(min-width: 1093px)");
 
   if (isMobile.matches) {
-    console.log("mobile");
-    responsiveFunc();
+    responsiveMobileFunc("mobile");
     return "mobile";
+
+
+
   } else if (isTablet.matches) {
-    console.log("tablet");
-    responsiveFunc();
+    responsiveTabletFunc("tablet");
     return "tablet";
+
+
+
+
   } else if (isDesktop.matches) {
-    console.log("desktop");
-    desktopFunc();
+    desktopDesktopFunc();
     return "desktop";
   }
 }
 
-function desktopFunc() {
-  // responsive-navbar -> navbar
+
+
+
+
+
+
+function desktopDesktopFunc(){
+  console.log('desktop view');
+  // navbar
   var navbar = document.getElementById("pl-navbar");
   navbar.classList.remove("responsive");
   navbar.classList.add("no-responsive");
   document.getElementById("myTopnavResponsive").style.display = "none";
 
-  // navegation-alternative -> navigation
-  var responsiveNavigation = document.getElementById("navigation-alternative");
-  responsiveNavigation.style.display = "none";
+  // navegation
+  displayElement("navigation-alternative", "none");
+  displayElement("navigation", "flex");
 
-  var navigation = document.getElementById("navigation");
-  navigation.style.display = "flex";
-
-  // fadeIn - banner-2
-  var responsiveBanner = document.getElementById("banner-2");
-  responsiveBanner.classList.replace("banner-2-responsive", "banner-2");
-
-  var containers = document.getElementById("containers");
-  containers.classList.replace("containers-responsive", "containers");
+  document.getElementById("banner-1").classList.add("banner-1-desktop");
+  document.getElementById("banner-2").classList.add("banner-2-desktop");
+  document.getElementById("banner-3").classList.add("banner-3-desktop");
 
   // sections
-  var responsiveSections = document.getElementById("sections");
-  responsiveSections.classList.replace("responsive-sections", "sections");
+  document.getElementById("sections").classList.add("sections-desktop");
+}
+function responsiveTabletFunc(){
+  console.log('Tablet view');
+  // responsive navbar
+  responsiveNavbar();
+  // responsive navigation
+  responsiveNavigation();
+
+  // banner-1
+  document.getElementById("banner-1").classList.add("banner-1-tablet");
+  document.getElementById("banner-2").classList.add("banner-2-tablet");
+  document.getElementById("banner-3").classList.add("banner-3-tablet");
+
+
+  // responsive sections
+  classToggle("sections", "sections", "responsive-sections");
+}
+function responsiveMobileFunc(){
+  console.log('mobile view');
+  // responsive navbar
+  responsiveNavbar();
+  responsiveNavigation();
+  // banner-1
+  document.getElementById("banner-1").classList.add("banner-1-mobile");
+  document.getElementById("banner-2").classList.add("banner-2-mobile");
+  document.getElementById("banner-3").classList.add("banner-3-mobile");
+
+
+  // responsive sections
+  classToggle("sections", "sections", "responsive-sections");
 }
 
-function responsiveFunc() {
-  // navbar -> responsive-navbar
+function responsiveNavbar() {
   var navbar = document.getElementById("pl-navbar");
   navbar.classList.remove("no-responsive");
   navbar.classList.add("responsive");
-
-  // navegation -> navigation-alternative
-  var navigation = document.getElementById("navigation");
-  navigation.style.display = "none";
-
-  var responsiveNavigation = document.getElementById("navigation-alternative");
-  responsiveNavigation.style.display = "flex";
-
-  // fadeOut - banner-2
-  var responsiveBanner = document.getElementById("banner-2");
-  responsiveBanner.classList.replace("banner-2", "banner-2-responsive");
-
-  var responsiveContainers = document.getElementById("containers");
-  responsiveContainers.classList.replace("containers", "containers-responsive");
-
-  // sections
-  var sections = document.getElementById("sections");
-  sections.classList.replace("sections", "responsive-sections");
 }
+function responsiveNavigation() {
+  // navigation
+  displayElement("myTopnavResponsive", "flex");
+  displayElement("navigation", "none");
+  displayElement("navigation-alternative", "flex");
+}
+function refreshClassList(id) {
+  var element = document.getElementById(id);
+  element.classList.remove(...element.classList);
+}
+const displayElement = (id, style) => document.getElementById(id).style.display = style;
+const classToggle = (id, prev, post) => document.getElementById(id).classList.replace(prev, post);
