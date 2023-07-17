@@ -1,64 +1,198 @@
+/* GLOBAL STYLES */
+
 .panel_c {
   background-image: var(--gradient);
 }
 .img-reloj {
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
-.img-reloj > .banner-3 {
+/* Desktop styles */
+.banner-3-desktop {
   width: 100%;
   height: 90%;
   position: absolute;
   bottom: 0;
 }
-.banner-3 > #banner-3-title {
-  width: 500px;
+.banner-3-desktop .reloj {
+  position: absolute;
+  z-index: 1;
+  left: 60%;
+  top: 12%;
+  width: 42%;
+  width: 40%;
+  right: 0;
+  opacity: 0.5;
+}
+.banner-3-desktop #banner-3-title {
+  width: 33%;
   word-spacing: 10px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 0%;
-}
-#banner-3-title > .titulo3 {
   color: var(--white-color);
   font-family: "Merriweather Sans", sans-serif;
+}
+.banner-3-desktop #banner-3-title .titulo3 {
   position: absolute;
-  top: 10%;
+  top: 11%;
+  width: 92%;
+  font-size: 2vw;
 }
-
-.banner-3 > .imagen-fondo {
+.banner-3-desktop .imagen-fondo {
   position: relative;
-  top: -10%;
+  top: -8%;
+  width: 84%;
+  height: 78%;
+  left: 17%;
 }
-.agua2 > img {
+.banner-3-desktop .imagen-fondo .agua2 #agua2-img {
   position: absolute;
   width: 65%;
-  top: 20%;
+  top: -1%;
   right: 0;
   z-index: 1;
 }
-
-.bote2 > #bote2-img {
-  position: absolute;
-  width: 55%;
-  top: 20%;
-  right: 10%;
-  z-index: 2;
-}
-
-.img-reloj {
+.banner-3-desktop .imagen-fondo .bote2 {
   position: relative;
-  overflow: hidden;
+  z-index: 7;
+  bottom: -13%;
+  width: 57%;
+  left: 40%;
 }
-.img-reloj > img {
-  width: 40%;
+.banner-3-desktop .imagen-fondo .bote2 #bote2-img {
+  position: relative;
+  width: 81%;
+  left: -6%;
+}
+
+/* Tablet styles */
+.banner-3-tablet {
+  width: 100%;
+  height: 90%;
   position: absolute;
+  bottom: 0;
+}
+.banner-3-tablet .reloj {
+  position: absolute;
+  z-index: 1;
+  left: 60%;
+  top: 27%;
+  width: 42%;
+  width: 40%;
   right: 0;
-  top: 25%;
   opacity: 0.5;
+}
+.banner-3-tablet #banner-3-title {
+  width: 63%;
+  height: auto;
+  word-spacing: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 14%;
+  left: 0%;
+  color: var(--white-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+.banner-3-tablet #banner-3-title .titulo3 {
+  position: absolute;
+  top: 10%;
+  width: 80%;
+}
+.banner-3-tablet .imagen-fondo {
+  position: relative;
+  top: 6%;
+  width: 131%;
+  height: 78%;
+  left: -29%;
+}
+.banner-3-tablet .imagen-fondo .agua2 #agua2-img {
+  position: absolute;
+  width: 65%;
+  top: -1%;
+  right: 0;
+  z-index: 1;
+}
+.banner-3-tablet .imagen-fondo .bote2 {
+  position: relative;
+  z-index: 7;
+  bottom: -13%;
+  width: 57%;
+  left: 40%;
+}
+.banner-3-tablet .imagen-fondo .bote2 #bote2-img {
+  position: relative;
+  width: 73%;
+  left: 3%;
+}
+
+/* Mobile styles */
+.banner-3-mobile {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+}
+.banner-3-mobile .reloj {
+  position: absolute;
+  z-index: 1;
+  left: 33%;
+  top: 43%;
+  width: 72%;
+  opacity: 0.5;
+}
+.banner-3-mobile #banner-3-title {
+  width: 85%;
+  word-spacing: 10px;
+  font-size: 4vw;
+  font-weight: bold;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 19%;
+  color: var(--white-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+.banner-3-mobile #banner-3-title .titulo3 {
+  position: absolute;
+  top: 10%;
+  left: 11%;
+  width: 80%;
+}
+.banner-3-mobile .imagen-fondo {
+  position: absolute;
+  top: 28%;
+  width: 169%;
+  height: 78%;
+  left: -58%;
+}
+.banner-3-mobile .imagen-fondo .agua2 #agua2-img {
+  position: absolute;
+  width: 65%;
+  top: -1%;
+  right: 0;
+  z-index: 1;
+}
+.banner-3-mobile .imagen-fondo .bote2 {
+  position: relative;
+  z-index: 7;
+  bottom: -13%;
+  width: 57%;
+  left: 40%;
+}
+.banner-3-mobile .imagen-fondo .bote2 #bote2-img {
+  /* width: 81%; */
+  position: relative;
+  /* z-index: 7; */
+  /* bottom: -8%; */
+  width: 73%;
+  left: 3%;
 }
 
 /* animations */
@@ -76,4 +210,37 @@
 
 .animate-banner-3-title-inverted {
   animation: inverted-movement-banner-3-title 2s forwards;
+}
+
+@keyframes movement-bote2 {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 10%;
+  }
+}
+@keyframes movement-bote2-2 {
+  0% {
+    right: 10%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+@keyframes movement-banner-3-title {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 45%;
+  }
+}
+@keyframes inverted-movement-banner-3-title {
+  0% {
+    left: 45%;
+  }
+  100% {
+    left: 0%;
+  }
 }

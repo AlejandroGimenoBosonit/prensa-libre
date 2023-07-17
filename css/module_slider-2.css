@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 .panel_b {
   background-color: var(--background-color);
 }
@@ -13,138 +14,276 @@
   color: var(--white-color);
 }
 
-#img-grid{
-  width: 258px;
-height: 278px;
-}
-#banner-2{
+
+/* Desktop styles */
+.banner-2-desktop{
   width: 100%;
-  height: 70%;
+  height: 96%;
   position: absolute;
-  bottom: 15%;
+  bottom: 2%;
   font-family: "Merriweather", serif;
   display: flex;
-justify-content: center;
- 
+  flex-direction: column;
+  align-items: center;
+
+  & #banner-2-title{
+    justify-content: center;
+    display: flex;
+    width: 47%;
+    font-size: 29px;
+    position: absolute;
+    top: 12%;
+  }
+  & .containers{
+    width: 55%;
+    height: 67%;
+    position: absolute;
+    bottom: 9%;
+    left: 22%;
+    z-index: 1;
+    display: flex;
+
+    & .grid-container{
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 5px 0 5px;
+      height: 82%;
+      width: 25%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../assets/banner-2/Rectangle9.png);
+      backdrop-filter: blur(6px);
+    }
+
+    & .container-img {
+      z-index: 2;
+      width: 80%;
+      padding: 10px;
+    }
+
+    & .container-info{
+      height: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+
+      & .container-subtitle{
+        font-size: 1vw;
+      }
+      & .container-hr {
+        z-index: 1;
+        width: 81%;
+        margin: 0 20px 0 20px;
+      }
+      & .container-text{
+        font-size: 1vw;
+
+        & .text{
+          margin: 0 15px 0 15px;
+          font-weight: bold;
+        }
+      }
+    }
+    
+  }
 }
-.banner-2{
+/* Tablet styles */
+.banner-2-tablet{
+  /* background-color: blue; */
+  width: 100%;
+  height: 96%;
+  position: absolute;
+  bottom: 2%;
+  font-family: "Merriweather", serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
+  & #banner-2-title{
+    justify-content: center;
+    display: flex;
+    width: 64%;
+    font-size: 4vw;
+    position: absolute;
+    z-index: 1;
+    top: 17%;
+  }
+  & .containers{
+    /* background-color: green; */
+    width: 82%;
+    height: 39%;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    z-index: 1;
+    display: flex;
+    
+    & .grid-container{
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 5px 0 5px;
+      height: 134%;
+      width: 25%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../assets/banner-2/Rectangle9.png);
+      backdrop-filter: blur(6px);
+    }
+
+    & .container-img {
+      z-index: 2;
+      width: 80%;
+      padding: 10px;
+    }
+
+    & .container-info{
+      height: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+
+      & .container-subtitle{
+        font-size: 1.3vw;
+      }
+      & .container-hr {
+        z-index: 1;
+        width: 81%;
+        margin: 0 20px 0 20px;
+      }
+      & .container-text{
+        font-size: 1vw;
+
+        & .text{
+          margin: 0 15px 0 15px;
+          font-weight: bold;
+        }
+      }
+    }
+    
+  }
 }
-.banner-2 > #banner-2-title{
+/* Mobile styles */
+.banner-2-mobile{
+  /* background-color: blue; */
+  width: 100%;
+  height: 96%;
   position: absolute;
-  /* left: 15%; */
-  bottom: 90%;
-  z-index: 1;
-  width: fit-content;
-
-  margin-bottom: 20px;
-  
-  font-size: 35px;
-  font-weight: bold;
-
+  bottom: 2%;
+  font-family: "Merriweather", serif;
   display: flex;
-  justify-content: center;
-}
-.banner-2-responsive > #banner-2-title{
-  position: absolute;
-  width: fit-content;
-  bottom: 96%;
-  z-index: 1;
-  margin-bottom: 20px;
-  /* font-size: 27px; */
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-}
-#containers{
-  
-  /* position: absolute; */
-  z-index: 1;
-  column-gap: 5px;
-  display: flex;
-  /* flex-direction: row; */
-}
-.containers{
-  width: 50%;
-  height: 70%;
-  align-items: center;
-  justify-content: center;
-}
-.containers-responsive{
-  background-color: yellow;
-  flex-wrap: wrap;
-  width: 55%;
-  height: 100%;
-  justify-content: center;
-}
-.containers-responsive > #container{
-  background-color: red;
-width: 33%;
-}
-.containers-responsive > #container img {
-  height: 98%;
-  width: 98%;
-}
-
-
-#containers > #container {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-}
-#container > img {
-  position: absolute;
-  z-index: 1;
-  border-radius: 18px;
 
-  backdrop-filter: blur(6px); 
+  & #banner-2-title{
+    justify-content: center;
+    display: flex;
+    width: 64%;
+    font-size: 29px;
+    position: absolute;
+    z-index: 1;
+    top: 17%;
+  }
+  & .containers{
+    /* background-color: green; */
+    width: 82%;
+    height: 39%;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    z-index: 1;
+    display: flex;
+    
+    & .grid-container{
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 5px 0 5px;
+      height: 134%;
+      width: 25%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../assets/banner-2/Rectangle9.png);
+      backdrop-filter: blur(6px);
+    }
+
+    & .container-img {
+      z-index: 2;
+      width: 80%;
+      padding: 10px;
+    }
+
+    & .container-info{
+      height: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+
+      & .container-subtitle{
+        font-size: 1.3vw;
+      }
+      & .container-hr {
+        z-index: 1;
+        width: 81%;
+        margin: 0 20px 0 20px;
+      }
+      & .container-text{
+        font-size: 1vw;
+
+        & .text{
+          margin: 0 15px 0 15px;
+          font-weight: bold;
+        }
+      }
+    }
+    
+  }
 }
 
-.container-img {
-  z-index: 1;
-  width: 80%;
-  padding: 10px;
-}
-.container-subtitle {
-  z-index: 1;
-  font-size: 13px;
-  margin: 5px;
-}
-.container-hr {
-  z-index: 1;
-  width: 80%;
-}
-.container-text {
-  z-index: 1;
-  padding: 8px;
-  font-size: 11px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 3px 0 3px;
-  width: 90%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* animations */
-.containers > .grid-container {
+/* .containers > .grid-container {
   
   animation: fadeIn 0.5s ease-in both;
 }
 .containers > .grid-container-inverted {
   
   animation: fadeOut 0.5s ease-in both;
-}
+} */
 
-.containers-responsive > .grid-container {
+
+
+
+
+
+/* responsive animations */
+/* .containers-responsive > .grid-container {
   
   animation: fadeIn-inverse 0.5s ease-in both;
 }
@@ -152,6 +291,10 @@ width: 33%;
   
   animation: fadeOut-inverse 0.5s ease-in both;
 }
+ */
+
+
+
 
 div#containers div:nth-child(3) {
   animation-delay: 0.2s;
@@ -170,4 +313,83 @@ div#containers div:nth-child(1) {
 
 .banner-2 > .animate-banner-2-title-inverted {
   animation: inverted-movement-banner-2-title 3s forwards;
+}
+
+@keyframes movement-banner-2-title {
+  0% {
+    left: 35%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes inverted-movement-banner-2-title {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 35%;
+  }
+}
+
+/* animation responsive */
+
+@keyframes responsive-movement-banner-2-title {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes responsive-inverted-movement-banner-2-title {
+  0% { left: 0%; }
+  100% { left: 50%;  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, -8%, 0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate3d(0, -8%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn-inverse {
+  from {
+    opacity: 1;
+    transform: translate3d(0, -15%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeOut-inverse {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
 }

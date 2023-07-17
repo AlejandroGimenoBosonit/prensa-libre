@@ -7,7 +7,6 @@
 @import url("./module_slider-3.css");
 @import url("./module_sections.css");
 @import url("./responsive.css");
-@import url("./animations.css");
 
 :root {
   --blue-indicator: #4497b9;
@@ -61,4 +60,7 @@ body {
 .img-section {
   width: 100%;
   height: calc(2100px / 3);
+}
+img {
+  max-width: 100%;
 }

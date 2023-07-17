@@ -7,10 +7,6 @@ $(document).ready(function () {
   $(navListEl).click(function () {
     scrollToElement($(this).attr("href"), speed);
   });
-
-  // $("span").click(function () {
-  //   scrollToBanner($(this).attr("href"), speed);
-  // });
 });
 
 var scrollToElement = (el, ms) => {
@@ -21,19 +17,6 @@ var scrollToElement = (el, ms) => {
     ms
   );
 };
-
-// var scrollToBanner = (attr, ms) => {
-//   $("#container").animate(
-//     {
-//       scrollTop: $(attr).offset().top,
-//     },
-//     ms
-//   );
-// };
-/**
- * 
- * TODO: concatena clases
- */
 function NavResponsive() {
   var x = document.getElementById("myTopnavResponsive");
   if (x.className === "hide") {

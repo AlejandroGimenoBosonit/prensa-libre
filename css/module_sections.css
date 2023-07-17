@@ -3,52 +3,44 @@ hr {
   color: var(--grey-color);
   opacity: 0.4;
 }
-/* secciones */
-#sections {
+[id*="section-"] {
+  margin-bottom: 40px;
+}
+.titulo-mini p{
+  font-size: 16px;
+  padding: 15px 0 15px 0;
+  color: var(--blue-indicator); 
+}
+
+.sections-desktop {
   background: var(--white-color) 0% 0% no-repeat padding-box;
-  border-radius: 20px 20px 0px 0px;
-
   z-index: 3;
-
+  position: absolute;
+  top: 72%;
+  left: 0;
+  right: 0;
+  width: 60%;
   height: auto;
-
+  border-radius: 20px 20px 0px 0px;
   margin-left: auto;
   margin-right: auto;
 
   padding: 5px 30px 0 30px;
 }
-.sections {
-  position: absolute;
-  width: 60%;
-  top: 67%;
-  left: 0;
-  right: 0;
-}
-
-[id*="section-"] {
-  margin-bottom: 40px;
-}
-
-/* SECCION 1 */
-.image {
+/* .sections-desktop .empiece-aqui .titulo-mini p {
+  
+} */
+.sections-desktop .empiece-aqui .image{
   width: 100%;
   height: auto;
 }
-img {
-  max-width: 100%;
-}
-
-.titulo-mini > p {
-  font-size: 16px;
-  padding: 15px 0 15px 0;
-  color: var(--blue-indicator);
-}
-.titulo-principal > h2 {
+.sections-desktop .empiece-aqui .titulo-principal h2 {
   text-align: left;
   font-size: 25px;
   font-weight: normal;
 }
-/* SECCION 2 */
+
+/* 
 .cartas-turismo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -104,9 +96,13 @@ img {
   right: 40%;
 }
 
-/* responsive */
 .responsive-sections {
-  width: 100%;
+  background: var(--white-color) 0% 0% no-repeat padding-box;
+  z-index: 3;
   position: absolute;
-  top: 59%;
-}
+  top: 83%;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 5px 30px 0 30px;
+} */
