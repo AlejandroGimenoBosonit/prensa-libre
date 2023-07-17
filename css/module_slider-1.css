@@ -6,6 +6,29 @@
   background-color: var(--background-color);
   top: -1%;
 }
+.animate-title {
+  animation: movement-title 1s forwards;
+}
+.animate-title-2 {
+  animation: inverted-movement-title 1s forwards;
+}
+@keyframes movement-title {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 52%;
+  }
+}
+
+@keyframes inverted-movement-title {
+  0% {
+    left: 52%;
+  }
+  100% {
+    left: 100%;
+  }
+}
 
 /* Desktop styles */
 .banner-1-desktop {
@@ -35,7 +58,6 @@
   letter-spacing: 10px;
   font-family: "Merriweather Sans", sans-serif;
 }
-
 .banner-1-desktop .imagen-fondo .reloj-fondo {
   width: 53%;
   position: absolute;
@@ -47,13 +69,36 @@
   bottom: 7%;
   width: 36%;
   position: absolute;
-  left: 38%;
+  /* left: 38%; */
+}
+.banner-1-desktop .imagen-fondo .bote .animate-bote {
+  animation: inverted-movement-boat-desktop 3s forwards;
+}
+.banner-1-desktop .imagen-fondo .bote .animate-bote-2 {
+  animation: movement-boat-desktop 3s forwards;
 }
 .banner-1-desktop .imagen-fondo .agua #agua-img {
   bottom: 1%;
   width: 29%;
   position: absolute;
   left: 37%;
+}
+@keyframes movement-boat-desktop {
+  0% {
+    right: 26%;
+  }
+  100% {
+    right: 24%;
+  }
+}
+
+@keyframes inverted-movement-boat-desktop {
+  0% {
+    right: 24%;
+  }
+  100% {
+    right: 26%;
+  }
 }
 
 /* Tablet styles */
@@ -96,7 +141,13 @@
   bottom: 4%;
   width: 66%;
   position: absolute;
-  left: 26%;
+  /* left: 26%; */
+}
+.banner-1-tablet .imagen-fondo .bote .animate-bote {
+  animation: inverted-movement-boat-tablet 3s forwards;
+}
+.banner-1-tablet .imagen-fondo .bote .animate-bote-2 {
+  animation: movement-boat-tablet 3s forwards;
 }
 .banner-1-tablet .imagen-fondo .agua #agua-img {
   bottom: 1%;
@@ -104,6 +155,24 @@
   position: absolute;
   left: 28%;
 }
+@keyframes movement-boat-tablet {
+  0% {
+    right: 6%;
+  }
+  100% {
+    right: 4%;
+  }
+}
+
+@keyframes inverted-movement-boat-tablet {
+  0% {
+    right: 4%;
+  }
+  100% {
+    right: 6%;
+  }
+}
+
 /* mobile styles */
 .banner-1-mobile {
   width: 100%;
@@ -144,7 +213,13 @@
   bottom: 23%;
   width: 66%;
   position: absolute;
-  left: 26%;
+  /* left: 26%; */
+}
+.banner-1-mobile .imagen-fondo .bote .animate-bote {
+  animation: inverted-movement-boat-mobile 3s forwards;
+}
+.banner-1-mobile .imagen-fondo .bote .animate-bote-2 {
+  animation: movement-boat-mobile 3s forwards;
 }
 .banner-1-mobile .imagen-fondo .agua #agua-img {
   bottom: 20%;
@@ -152,46 +227,20 @@
   position: absolute;
   left: 28%;
 }
-
-
-
-
-.animate-title {
-  animation: movement-title 1s forwards;
+@keyframes movement-boat-mobile {
+  0% {
+    right: 8%;
+  }
+  100% {
+    right: 1%;
+  }
 }
 
-.animate-title-2 {
-  animation: inverted-movement-title 1s forwards;
-}
-
-.banner-1-desktop .imagen-fondo .bote .animate-bote {
-  animation: inverted-movement-boat 3s forwards;
-}
-.banner-1-desktop .imagen-fondo .bote .animate-bote-2 {
-  animation: movement-boat 3s forwards;
-}
-
-
-
-
-
-
-@keyframes movement-boat {
-  0% { right: 45%; }
-  100% { right: 47%; }
-}
-
-@keyframes inverted-movement-boat {
-  0% { right: 47%;  }
-  100% { right: 45%;  }
-}
-
-@keyframes movement-title {
-  0% { left: 100%; }
-  100% { left: 52%; }
-}
-
-@keyframes inverted-movement-title {
-  0% { left: 52%; }
-  100% { left: 100%; }
+@keyframes inverted-movement-boat-mobile {
+  0% {
+    right: 1%;
+  }
+  100% {
+    right: 8%;
+  }
 }

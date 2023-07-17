@@ -78,6 +78,10 @@ function desktopDesktopFunc(){
   // sections
   document.getElementById("sections").classList.add("sections-desktop");
 }
+
+
+
+
 function responsiveTabletFunc(){
   console.log('Tablet view');
   // responsive navbar
@@ -91,8 +95,8 @@ function responsiveTabletFunc(){
   document.getElementById("banner-3").classList.add("banner-3-tablet");
 
 
-  // responsive sections
-  classToggle("sections", "sections", "responsive-sections");
+ // sections
+  document.getElementById("sections").classList.add("sections-tablet");
 }
 function responsiveMobileFunc(){
   console.log('mobile view');
@@ -105,8 +109,8 @@ function responsiveMobileFunc(){
   document.getElementById("banner-3").classList.add("banner-3-mobile");
 
 
-  // responsive sections
-  classToggle("sections", "sections", "responsive-sections");
+  // sections
+  document.getElementById("sections").classList.add("sections-mobile");
 }
 
 function responsiveNavbar() {

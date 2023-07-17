@@ -7,6 +7,31 @@
   position: relative;
   overflow: hidden;
 }
+.animate-banner-3-title {
+  animation: movement-banner-3-title 2s forwards;
+}
+
+.animate-banner-3-title-inverted {
+  animation: inverted-movement-banner-3-title 2s forwards;
+}
+
+@keyframes movement-banner-3-title {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 45%;
+  }
+}
+@keyframes inverted-movement-banner-3-title {
+  0% {
+    eft: 45%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 /* Desktop styles */
 .banner-3-desktop {
   width: 100%;
@@ -62,12 +87,35 @@
   z-index: 7;
   bottom: -13%;
   width: 57%;
-  left: 40%;
+  /* left: 40%; */
 }
+.banner-3-desktop .imagen-fondo .bote2 .animate-bote2 {
+  animation: movement-bote2-desktop 2s forwards;
+}
+.banner-3-desktop .imagen-fondo .bote2 .animate-bote2-2 {
+  animation: movement-bote2-2-desktop 2s forwards;
+}
+
 .banner-3-desktop .imagen-fondo .bote2 #bote2-img {
   position: relative;
   width: 81%;
   left: -6%;
+}
+@keyframes movement-bote2-desktop {
+  0% {
+    left: 60%;
+  }
+  100% {
+    left: 55%;
+  }
+}
+@keyframes movement-bote2-2-desktop {
+  0% {
+    left: 55%;
+  }
+  100% {
+    left: 60%;
+  }
 }
 
 /* Tablet styles */
@@ -125,12 +173,34 @@
   z-index: 7;
   bottom: -13%;
   width: 57%;
-  left: 40%;
+  /* left: 40%; */
+}
+.banner-3-tablet .imagen-fondo .bote2 .animate-bote2 {
+  animation: movement-bote2-tablet 2s forwards;
+}
+.banner-3-tablet .imagen-fondo .bote2 .animate-bote2-2 {
+  animation: movement-bote2-2-tablet 2s forwards;
 }
 .banner-3-tablet .imagen-fondo .bote2 #bote2-img {
   position: relative;
   width: 73%;
   left: 3%;
+}
+@keyframes movement-bote2-tablet {
+  0% {
+    left: 70%;
+  }
+  100% {
+    left: 65%;
+  }
+}
+@keyframes movement-bote2-2-tablet {
+  0% {
+    left: 65%;
+  }
+  100% {
+    left: 70%;
+  }
 }
 
 /* Mobile styles */
@@ -184,63 +254,32 @@
   z-index: 7;
   bottom: -13%;
   width: 57%;
-  left: 40%;
+  /* left: 40%; */
+}
+.banner-3-mobile .imagen-fondo .bote2 .animate-bote2 {
+  animation: movement-bote2-mobile 2s forwards;
+}
+.banner-3-mobile .imagen-fondo .bote2 .animate-bote2-2 {
+  animation: movement-bote2-2-mobile 2s forwards;
 }
 .banner-3-mobile .imagen-fondo .bote2 #bote2-img {
-  /* width: 81%; */
   position: relative;
-  /* z-index: 7; */
-  /* bottom: -8%; */
   width: 73%;
   left: 3%;
 }
-
-/* animations */
-.animate-bote2 {
-  animation: movement-bote2 2s forwards;
-}
-/* inversa */
-.animate-bote2-2 {
-  animation: movement-bote2-2 2s forwards;
-}
-
-.animate-banner-3-title {
-  animation: movement-banner-3-title 2s forwards;
-}
-
-.animate-banner-3-title-inverted {
-  animation: inverted-movement-banner-3-title 2s forwards;
-}
-
-@keyframes movement-bote2 {
+@keyframes movement-bote2-mobile {
   0% {
-    right: 0%;
+    left: 80%;
   }
   100% {
-    right: 10%;
+    left: 75%;
   }
 }
-@keyframes movement-bote2-2 {
+@keyframes movement-bote2-2-mobile {
   0% {
-    right: 10%;
+    left: 75%;
   }
   100% {
-    right: 0%;
-  }
-}
-@keyframes movement-banner-3-title {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 45%;
-  }
-}
-@keyframes inverted-movement-banner-3-title {
-  0% {
-    left: 45%;
-  }
-  100% {
-    left: 0%;
+    left: 80%;
   }
 }
