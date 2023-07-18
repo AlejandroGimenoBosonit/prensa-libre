@@ -11,6 +11,7 @@ hr {
   padding: 15px 0 15px 0;
   color: var(--blue-indicator);
 }
+
 .sections-desktop {
   background: var(--white-color) 0% 0% no-repeat padding-box;
   z-index: 3;
@@ -90,7 +91,7 @@ hr {
   left: 0;
   right: 0;
   height: auto;
-  padding: 5px 30px 0 30px;
+  padding: 5px 45px 0 30px;
 }
 @supports (-webkit-font-smoothing: antialiased) {
   .sections-desktop {

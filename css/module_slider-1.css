@@ -39,6 +39,7 @@
   right: 1%;
 }
 .banner-1-desktop #banner-1-title {
+  
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
@@ -48,10 +49,12 @@
   font-family: "Merriweather Sans", sans-serif;
 }
 .banner-1-desktop #banner-1-title .titulo {
+  margin: 0;
   color: var(--white-color);
   font-size: 5vw;
 }
 .banner-1-desktop #banner-1-title .subtitulo {
+  margin: 0;
   color: var(--blue-subtitle);
   font-size: 2vw;
   font-weight: lighter;
