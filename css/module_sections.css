@@ -1,4 +1,5 @@
 /* Separators */
+
 hr {
   color: var(--grey-color);
   opacity: 0.4;
@@ -11,6 +12,10 @@ hr {
   padding: 15px 0 15px 0;
   color: var(--blue-indicator);
 }
+.image{
+  width: 1140px;
+}
+
 
 .sections-desktop {
   background: var(--white-color) 0% 0% no-repeat padding-box;

@@ -9,7 +9,7 @@ function deviceCheck() {
   refreshClassList("banner-2");
   refreshClassList("banner-3");
   refreshClassList("sections");
-  
+
   const isMobile = window.matchMedia("(max-width: 575px)");
   const isTablet = window.matchMedia("(max-width: 1092px)");
   const isDesktop = window.matchMedia("(min-width: 1093px)");
@@ -28,7 +28,7 @@ function deviceCheck() {
     return "desktop";
   }
 }
-function desktopDesktopFunc(){
+function desktopDesktopFunc() {
   // navbar
   var navbar = document.getElementById("pl-navbar");
   navbar.classList.remove("responsive");
@@ -43,7 +43,7 @@ function desktopDesktopFunc(){
   // sections
   document.getElementById("sections").classList.add("sections-desktop");
 }
-function responsiveTabletFunc(){
+function responsiveTabletFunc() {
   // responsive navbar
   responsiveNavbar();
   // responsive navigation
@@ -52,10 +52,10 @@ function responsiveTabletFunc(){
   document.getElementById("banner-1").classList.add("banner-1-tablet");
   document.getElementById("banner-2").classList.add("banner-2-tablet");
   document.getElementById("banner-3").classList.add("banner-3-tablet");
- // sections
+  // sections
   document.getElementById("sections").classList.add("sections-tablet");
 }
-function responsiveMobileFunc(){
+function responsiveMobileFunc() {
   // responsive navbar
   responsiveNavbar();
   responsiveNavigation();
@@ -82,13 +82,17 @@ function refreshClassList(id) {
   element.classList.remove(...element.classList);
 }
 function restartCoordinates() {
-  console.log('inside');
+  console.log("inside");
   // pag coordinates to y=0
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
   // slider
-  let banner1Coords = document.getElementById("banner-1").getBoundingClientRect();
-  document.getElementById("sld").scrollTo(0,0);
+  let banner1Coords = document
+    .getElementById("banner-1")
+    .getBoundingClientRect();
+  document.getElementById("sld").scrollTo(0, 0);
   // buttons
 }
-const displayElement = (id, style) => document.getElementById(id).style.display = style;
-const classToggle = (id, prev, post) => document.getElementById(id).classList.replace(prev, post);
+const displayElement = (id, style) =>
+  (document.getElementById(id).style.display = style);
+const classToggle = (id, prev, post) =>
+  document.getElementById(id).classList.replace(prev, post);

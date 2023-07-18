@@ -46,6 +46,8 @@
   width: 56%;
   height: 45%;
 }
+
+
 .banner-2-desktop #container {
   display: flex;
   flex-direction: column;
