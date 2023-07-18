@@ -1,4 +1,6 @@
+
 var showed_box = 0;
+
 
 function fUp() {
   document.getElementById("arrow-down").style.color = "white";
@@ -46,6 +48,7 @@ const changeEllipsis = (event) => {
 };
 
 const clicked = (id) => {
+  console.log(id);
   if (
     id === "button_a" &&
     document.getElementById("bote-img").className == "animate-bote"
@@ -57,7 +60,7 @@ const clicked = (id) => {
     // banner-2
     document.getElementById("banner-2-title").className =
       "animate-banner-2-title";
-    selectMultiElements("#img-grid", "grid-container-inverted");
+    selectMultiElements("#container", "grid-container-inverted");
 
     // banner-3
     document.getElementById("bote2-img").className = "animate-bote2-2";
@@ -71,7 +74,7 @@ const clicked = (id) => {
     // banner-2
     document.getElementById("banner-2-title").className =
       "animate-banner-2-title-inverted";
-    selectMultiElements("#img-grid", "grid-container");
+    selectMultiElements("#container", "grid-container");
 
     // banner-1
     document.getElementById("bote-img").className = "animate-bote";
@@ -94,7 +97,7 @@ const clicked = (id) => {
     // banner-2
     document.getElementById("banner-2-title").className =
       "animate-banner-2-title";
-    selectMultiElements("#img-grid", "grid-container-inverted");
+    selectMultiElements("#container", "grid-container-inverted");
   }
 };
 

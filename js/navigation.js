@@ -1,14 +1,20 @@
 // scrolling animation
-$(document).ready(function () {
+
+$(function () {
+
+  initNavigation();
+  NavResponsive();
   
+});
+function initNavigation() {
   const navListEl = ".navbar-list-element";
-  var speed = 3000;
+  let speed = 3000;
 
   $(navListEl).click(function () {
     scrollToElement($(this).attr("href"), speed);
   });
-});
-
+  
+}
 var scrollToElement = (el, ms) => {
   $("html,body").animate(
     {
@@ -17,15 +23,17 @@ var scrollToElement = (el, ms) => {
     ms
   );
 };
-function NavResponsive() {
-  var x = document.getElementById("myTopnavResponsive");
-  if (x.className === "hide") {
 
-    x.classList.remove("hide");
-    x.classList.add("show");
+function NavResponsive() {
+  let navbarResp = document.getElementById("myTopNavResponsive");
+  if (navbarResp.className === "hide") {
+    navbarResp.classList.remove("hide");
+    navbarResp.classList.add("show");
 
   } else {
-    x.classList.remove("show");
-    x.classList.add("hide");
+    navbarResp.classList.remove("show");
+    navbarResp.classList.add("hide");
   }
 }
+
+
