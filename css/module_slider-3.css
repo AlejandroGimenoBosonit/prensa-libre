@@ -283,3 +283,19 @@
     left: 80%;
   }
 }
+@media only screen and (max-width: 744px) {
+  .banner-3-tablet #banner-3-title {
+    top: 8%;
+  }
+  .banner-3-tablet #banner-3-title .titulo3 {
+    position: absolute;
+    width: 99%;
+  }
+  .banner-3-tablet .imagen-fondo {
+    position: relative;
+    top: 17%;
+    width: 131%;
+    height: 78%;
+    left: -29%;
+  }
+}
