@@ -13,6 +13,9 @@
   width: 100%;
   color: var(--white-color);
 }
+.container-img img{
+  width: 90%;
+}
 /* Desktop styles */
 .banner-2-desktop{
   width: 100%;
@@ -35,7 +38,7 @@
 }
 .banner-2-desktop .containers {
   position: absolute;
-  top: 37%;
+  top: 31%;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -43,6 +46,8 @@
   width: 56%;
   height: 45%;
 }
+
+
 .banner-2-desktop #container {
   display: flex;
   flex-direction: column;
@@ -222,7 +227,7 @@
   text-align: center;
 }
 .banner-2-mobile .containers #container .container-info  .container-subtitle {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .banner-2-mobile .containers #container .container-info .container-hr {
   z-index: 1;
@@ -230,7 +235,7 @@
   margin: 0 20px 0 20px;
 }
 .banner-2-mobile .containers #container .container-info .container-text {
-  font-size: 1.6vw;
+  font-size: 1.9vw;
 }
 .banner-2-mobile .containers #container .container-info .container-text .text{
   margin: 0 15px 0 15px;
@@ -339,13 +344,13 @@ div#containers div:nth-child(1) {
   }
   .banner-2-mobile .containers #container .container-img {
     z-index: 2;
-    width: 27vw;
+    width: 20vw;
     padding: 10px;
 }
   .banner-2-mobile .containers #container .container-info .container-subtitle {
     font-size: 3vw;
   }
   .banner-2-mobile .containers #container .container-info .container-text {
-    font-size: 2.6vw;
+    font-size: 1.8vw;
 }
 }

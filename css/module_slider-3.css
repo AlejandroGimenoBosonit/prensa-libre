@@ -7,6 +7,9 @@
   position: relative;
   overflow: hidden;
 }
+.banner-3-title p {
+  margin: 0;
+}
 .animate-banner-3-title {
   animation: movement-banner-3-title 2s forwards;
 }
