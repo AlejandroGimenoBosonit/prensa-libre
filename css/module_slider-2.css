@@ -326,3 +326,26 @@ div#containers div:nth-child(1) {
     transform: translate3d(0, -20%, 0);
   }
 }
+
+@media only screen and (max-width: 459px){
+  .banner-2-mobile .containers #container {
+    height: 35vw;
+  }
+}
+
+@media only screen and (max-width: 328px){
+  .banner-2-mobile .containers #container {
+    height: 47vw;
+  }
+  .banner-2-mobile .containers #container .container-img {
+    z-index: 2;
+    width: 27vw;
+    padding: 10px;
+}
+  .banner-2-mobile .containers #container .container-info .container-subtitle {
+    font-size: 3vw;
+  }
+  .banner-2-mobile .containers #container .container-info .container-text {
+    font-size: 2.6vw;
+}
+}
