@@ -37,7 +37,7 @@
   color: var(--white-color);
 }
 
-#myTopnavResponsive {
+#myTopNavResponsive {
   display: none;
 }
 
@@ -46,7 +46,7 @@
   position: initial;
   align-self: center;
 }
-#myTopnavResponsive > a {
+#myTopNavResponsive > a {
   margin: 10px;
   text-decoration: none;
   color: var(--white-color);
@@ -58,8 +58,8 @@
   -webkit-transform: translateX(+0%) !important;
 }
 .hide {
-  transform: translateX(-100%) !important;
-  -webkit-transform: translateX(-100%) !important;
+  transform: translateX(-200%) !important;
+  -webkit-transform: translateX(-200%) !important;
 }
 
 .responsive {
@@ -93,17 +93,16 @@
   color: var(--white-color);
 }
 
-#myTopnavResponsive {
+#myTopNavResponsive {
   background-color: black;
   font-family: "Merriweather", serif;
 
   position: absolute;
   z-index: -5;
   width: 100vw;
-  height: 50vw;
+  height: 70vw;
 
   /* top: 79%; */
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;

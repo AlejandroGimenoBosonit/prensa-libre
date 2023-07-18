@@ -11,7 +11,6 @@ hr {
   padding: 15px 0 15px 0;
   color: var(--blue-indicator);
 }
-
 .sections-desktop {
   background: var(--white-color) 0% 0% no-repeat padding-box;
   z-index: 3;
@@ -82,7 +81,6 @@ hr {
   top: 20%;
   right: 40%;
 }
-
 .sections-tablet,
 .sections-mobile {
   background: var(--white-color) 0% 0% no-repeat padding-box;
@@ -93,4 +91,14 @@ hr {
   right: 0;
   height: auto;
   padding: 5px 30px 0 30px;
+}
+@supports (-webkit-font-smoothing: antialiased) {
+  .sections-desktop {
+    top: 78%;
+  }
+}
+@supports (-moz-appearance:none) {
+  .sections-desktop {
+    top: 59%;
+  }
 }
