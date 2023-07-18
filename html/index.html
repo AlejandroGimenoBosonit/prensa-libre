@@ -55,7 +55,7 @@
         <a class="navbar-list-element" href="#section-4">|&nbsp; Historias</a>
         <a class="navbar-list-element" href="#section-5">|&nbsp; Columnas</a>
         <a class="navbar-list-element" href="">|&nbsp; Quiero saber mas</a>
-        <div href="javascript:void(0);" class="icon" onclick="NavResponsive()">
+        <div href="javascript:void(0);" id="icon-bars" class="icon">
           <i class="fa fa-bars fa-2x"></i>
         </div>
       </div>
@@ -83,10 +83,9 @@
     </div>
 
     <div id="body-page" class="body-page">
-      <div id="container">
+      <div id="container-global">
         <div class="vl"></div>
         <input
-          onclick="clicked(this.id)"
           hidden
           class="ellipse"
           type="radio"
@@ -95,7 +94,6 @@
           checked
         />
         <input
-          onclick="clicked(this.id)"
           hidden
           class="ellipse"
           type="radio"
@@ -103,7 +101,6 @@
           id="button_b"
         />
         <input
-          onclick="clicked(this.id)"
           hidden
           class="ellipse"
           type="radio"
@@ -122,12 +119,14 @@
 
         <div class="carousel" id="carousel">
           <div id="navigation-alternative" class="navigation-alternative">
-            <span id="arrowUp" onclick="fUp()" for="arrowUp" class="arrowUp"
+            <span
+              id="slider-arrow"
+              for="arrowUp"
+              class="arrowUp"
               ><i class="fa-solid fa-chevron-up fa-3x"></i
             ></span>
             <span
-              id="arrowDown"
-              onclick="fDown()"
+              id="slider-arrow"
               for="arrowDown"
               class="arrowDown"
               ><i id="arrow-down" class="fa-solid fa-chevron-down fa-3x"></i

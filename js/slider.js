@@ -1,54 +1,35 @@
 
 var showed_box = 0;
+$(function() {
+  initMovements();
+  
+});
+function initMovements(){
+  // event listener to ellipsis
+  const sliderButtons = document.querySelectorAll('[id^="button_"]');
+  sliderButtons.forEach((sliderButton) => {
+    sliderButton.addEventListener("click", function() {
+      clicked(sliderButton.id)
+    });
+  });
 
 
-function fUp() {
-  document.getElementById("arrow-down").style.color = "white";
-  showed_box += -570;
-  if (showed_box > 0) {
-    document.getElementById("sld").style.transform =
-      "translateY(" + -showed_box + "px)";
-    if (showed_box === 570) {
-      clicked("button_b");
-    }
-  } else {
-    clicked("button_a");
-    document.getElementById("sld").style.transform =
-      "translateY(" + -showed_box + "px)";
-    document.getElementById("arrowUp").style.visibility = "hidden";
-  }
+  // arrows
+  const sliderArrows = document.querySelectorAll('#slider-arrow');
+  sliderArrows.forEach((sliderArrow) => {
+    sliderArrow.addEventListener("click", function() {
+      let arrowUp = document.getElementsByClassName("arrowUp")[0];
+      if(sliderArrow.className === "arrowUp"){
+        fUp(arrowUp);
+      }else if(sliderArrow.className === "arrowDown"){
+        fDown(arrowUp);
+      }
+    })
+    
+  })
 }
-
-function fDown() {
-  let icon = document.getElementById("arrowUp");
-  icon.style.visibility = "visible";
-  if (showed_box < 1140) {
-    showed_box += 570;
-
-    if (showed_box === 570) {
-      clicked("button_b");
-    } else if (showed_box === 1140) {
-      clicked("button_c");
-    }
-    document.getElementById("sld").style.transform =
-      "translateY(" + -showed_box + "px)";
-    if (showed_box > 570) {
-      document.getElementById("arrow-down").style.color = "black";
-    }
-  }
-}
-
-// ELLIPSIS BUTTON CHANGE
-const changeEllipsis = (event) => {
-  const clickedElem = event.target;
-  const allBtns = document.querySelectorAll(".ellipse");
-
-  allBtns.forEach((btn) => btn.classList.remove("ellipse-filled"));
-  clickedElem.classList.add("ellipse-filled");
-};
 
 const clicked = (id) => {
-  console.log(id);
   if (
     id === "button_a" &&
     document.getElementById("bote-img").className == "animate-bote"
@@ -100,10 +81,46 @@ const clicked = (id) => {
     selectMultiElements("#container", "grid-container-inverted");
   }
 };
-
 const selectMultiElements = (id, newClass) => {
   const elements = document.querySelectorAll(id);
   elements.forEach((el) => {
     el.className = newClass;
   });
 };
+function fUp(arrowUp) {
+  let whiteArrow = document.querySelector(".fa-chevron-down");
+  whiteArrow.style.color = "white";
+  showed_box += -570;
+  if (showed_box > 0) {
+    document.getElementById("sld").style.transform =
+      "translateY(" + -showed_box + "px)";
+    if (showed_box === 570) {
+      clicked("button_b");
+    }
+  } else {
+    clicked("button_a");
+    document.getElementById("sld").style.transform =
+      "translateY(" + -showed_box + "px)";
+      arrowUp.style.visibility = "hidden";
+  }
+}
+
+function fDown(arrowUp) {
+  arrowUp.style.visibility = "visible";
+
+  if (showed_box < 1140) {
+    showed_box += 570;
+
+    if (showed_box === 570) {
+      clicked("button_b");
+    } else if (showed_box === 1140) {
+      clicked("button_c");
+    }
+    document.getElementById("sld").style.transform =
+      "translateY(" + -showed_box + "px)";
+    if (showed_box > 570) {
+      let blackArrow = document.querySelector(".fa-chevron-down");
+      blackArrow.style.color = "black"
+    }
+  }
+}

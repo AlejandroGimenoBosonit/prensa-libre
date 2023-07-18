@@ -10,7 +10,7 @@ function deviceCheck() {
   refreshClassList("banner-3");
   refreshClassList("sections");
   
-  const isMobile = window.matchMedia("(max-width: 767px)");
+  const isMobile = window.matchMedia("(max-width: 575px)");
   const isTablet = window.matchMedia("(max-width: 1092px)");
   const isDesktop = window.matchMedia("(min-width: 1093px)");
 

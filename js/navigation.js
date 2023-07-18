@@ -3,8 +3,8 @@
 $(function () {
 
   initNavigation();
-  NavResponsive();
-  
+  const iconBars  = document.getElementById("icon-bars")
+  iconBars.addEventListener("click", () => NavResponsive())
 });
 function initNavigation() {
   const navListEl = ".navbar-list-element";
