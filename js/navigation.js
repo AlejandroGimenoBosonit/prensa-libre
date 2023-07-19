@@ -25,14 +25,12 @@ var scrollToElement = (el, ms) => {
 };
 
 function NavResponsive() {
-  let navbarResp = document.getElementById("myTopNavResponsive");
-  if (navbarResp.className === "hide") {
-    navbarResp.classList.remove("hide");
-    navbarResp.classList.add("show");
-
-  } else {
-    navbarResp.classList.remove("show");
-    navbarResp.classList.add("hide");
+  let navbarResp = document.getElementById("myTopNavResponsive").classList;
+  
+  if(navbarResp.contains("hide")){
+    navbarResp.replace("hide", "show");
+  }else{
+    navbarResp.replace("show", "hide");
   }
 }
 

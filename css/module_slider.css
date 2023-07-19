@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-#carousel,
-#navigation {
+.carousel,
+.navigation {
   flex: initial;
   display: block;
 }
 
-#navigation {
+.navigation {
   position: absolute;
   right: 80%;
   top: 30%;
@@ -31,24 +31,19 @@ height: 100%;
 transition: transform 0.4s ease-in-out;
 }
 
-#button_a:checked ~ #carousel .p-wrapper {
+#button_a:checked ~ .carousel .p-wrapper {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
-#button_b:checked ~ #carousel .p-wrapper {
+#button_b:checked ~ .carousel .p-wrapper {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
-#button_c:checked ~ #carousel .p-wrapper {
+#button_c:checked ~ .carousel .p-wrapper {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
-}
-
-#button_d:checked ~ #carousel .p-wrapper {
-  -webkit-transform: translateY(-300%);
-  transform: translateY(-300%);
 }
 
 [class^="panel_"] {
@@ -57,7 +52,7 @@ transition: transform 0.4s ease-in-out;
   height: inherit;
 }
 
-#navigation {
+.navigation {
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -84,9 +79,9 @@ transition: transform 0.4s ease-in-out;
   height: 15px;
 }
 
-#button_a:checked ~ #navigation .label_a,
-#button_b:checked ~ #navigation .label_b,
-#button_c:checked ~ #navigation .label_c {
+#button_a:checked ~ .navigation .label_a,
+#button_b:checked ~ .navigation .label_b,
+#button_c:checked ~ .navigation .label_c {
   cursor: default;
 
   background: url("../assets/filled-ellipse.png");
@@ -103,7 +98,7 @@ transition: transform 0.4s ease-in-out;
   color: var(--white-color);
 }
 
-#navigation{
+.navigation{
   display: none;
 }
 .navigation-alternative{

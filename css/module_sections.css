@@ -12,16 +12,13 @@ hr {
   padding: 15px 0 15px 0;
   color: var(--blue-indicator);
 }
-.image{
+.sections .image{
   width: 1140px;
 }
-
-
 .sections-desktop {
   background: var(--white-color) 0% 0% no-repeat padding-box;
   z-index: 3;
   position: absolute;
-  top: 78%;
   left: 0;
   right: 0;
   width: 60%;
@@ -100,11 +97,11 @@ hr {
 }
 @supports (-webkit-font-smoothing: antialiased) {
   .sections-desktop {
-    top: 78%;
+    top: 73%;
   }
 }
 @supports (-moz-appearance:none) {
   .sections-desktop {
-    top: 59%;
+    top: 66%;
   }
 }

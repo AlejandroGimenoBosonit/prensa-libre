@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.banner-2-desktop #banner-2-title {
+.banner-2-desktop .banner-2-title {
   justify-content: center;
   display: flex;
   width: 47%;
@@ -48,7 +48,7 @@
 }
 
 
-.banner-2-desktop #container {
+.banner-2-desktop .banner-2-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -62,31 +62,31 @@
   background-image: url(../assets/banner-2/Rectangle9.png);
   backdrop-filter: blur(6px);
 }
-.banner-2-desktop #container .container-img {
+.banner-2-desktop .banner-2-container .container-img {
   z-index: 2;
   width: 9vw;
   padding: 10px;
 }
-.banner-2-desktop #container .container-info {
+.banner-2-desktop .banner-2-container .container-info {
   height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
 }
-.banner-2-desktop .containers #container .container-info  .container-subtitle {
+.banner-2-desktop .containers .banner-2-container .container-info  .container-subtitle {
   font-size: 0.9vw;
 }
-.banner-2-desktop .containers #container .container-info .container-hr {
+.banner-2-desktop .containers .banner-2-container .container-info .container-hr {
   z-index: 1;
   width: 81%;
   margin: 0 20px 0 20px;
 }
-.banner-2-desktop .containers #container .container-info .container-text {
+.banner-2-desktop .containers .banner-2-container .container-info .container-text {
   font-size: 0.6vw;
   width: 11vw;
 }
-.banner-2-desktop .containers #container .container-info .container-text .text{
+.banner-2-desktop .containers .banner-2-container .container-info .container-text .text{
   font-weight: bold;
 }
 /* Tablet styles */
@@ -101,7 +101,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.banner-2-tablet #banner-2-title {
+.banner-2-tablet .banner-2-title {
   justify-content: center;
   display: flex;
   width: 47%;
@@ -118,7 +118,7 @@
   width: 69%;
   height: 50%;
 }
-.banner-2-tablet #container {
+.banner-2-tablet .banner-2-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -132,30 +132,30 @@
   background-image: url(../assets/banner-2/Rectangle9.png);
   backdrop-filter: blur(6px);
 }
-.banner-2-tablet #container .container-img {
+.banner-2-tablet .banner-2-container .container-img {
   z-index: 2;
   width: 12vw;
   padding: 10px;
 }
-.banner-2-tablet #container .container-info {
+.banner-2-tablet .banner-2-container .container-info {
   height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
 }
-.banner-2-tablet .containers #container .container-info  .container-subtitle {
+.banner-2-tablet .containers .banner-2-container .container-info  .container-subtitle {
   font-size: 1.2vw;
 }
-.banner-2-tablet .containers #container .container-info .container-hr {
+.banner-2-tablet .containers .banner-2-container .container-info .container-hr {
   z-index: 1;
   width: 81%;
   margin: 0 20px 0 20px;
 }
-.banner-2-tablet .containers #container .container-info .container-text {
+.banner-2-tablet .containers .banner-2-container .container-info .container-text {
   font-size: 1vw;
 }
-.banner-2-tablet .containers #container .container-info .container-text .text{
+.banner-2-tablet .containers .banner-2-container .container-info .container-text .text{
   font-weight: bold;
 }
 
@@ -170,7 +170,7 @@
   flex-direction: column;
   align-items: center;
 }
-.banner-2-mobile #banner-2-title {
+.banner-2-mobile .banner-2-title {
   justify-content: center;
   display: flex;
   width: 64%;
@@ -179,9 +179,6 @@
   z-index: 1;
   top: 17%;
 }
-
-
-
 .banner-2-mobile .containers {
   width: 82%;
   height: 61%;
@@ -196,7 +193,7 @@
   grid-row-gap: 5px;
 
 }
-.banner-2-mobile .containers #container {
+.banner-2-mobile .containers .banner-2-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -211,38 +208,36 @@
   background-image: url(../assets/banner-2/Rectangle9.png);
   backdrop-filter: blur(6px);
 }
-.banner-2-mobile .containers #container .container-img {
+.banner-2-mobile .containers .banner-2-container .container-img {
   z-index: 2;
   width: 15vw;
   padding: 10px;
 }
-.banner-2-mobile .containers #container .container-img img {
+.banner-2-mobile .containers .banner-2-container .container-img img {
   width: 50vw;
 }
-.banner-2-mobile .containers #container .container-info {
+.banner-2-mobile .containers .banner-2-container .container-info {
   height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
 }
-.banner-2-mobile .containers #container .container-info  .container-subtitle {
+.banner-2-mobile .containers .banner-2-container .container-info  .container-subtitle {
   font-size: 3vw;
 }
-.banner-2-mobile .containers #container .container-info .container-hr {
+.banner-2-mobile .containers .banner-2-container .container-info .container-hr {
   z-index: 1;
   width: 81%;
   margin: 0 20px 0 20px;
 }
-.banner-2-mobile .containers #container .container-info .container-text {
+.banner-2-mobile .containers .banner-2-container .container-info .container-text {
   font-size: 1.9vw;
 }
-.banner-2-mobile .containers #container .container-info .container-text .text{
+.banner-2-mobile .containers .banner-2-container .container-info .container-text .text{
   margin: 0 15px 0 15px;
   font-weight: bold;
 }
-
-
 
 /* animations */
 .banner-2-desktop .animate-banner-2-title {
@@ -333,24 +328,24 @@ div#containers div:nth-child(1) {
 }
 
 @media only screen and (max-width: 459px){
-  .banner-2-mobile .containers #container {
+  .banner-2-mobile .containers .banner-2-container {
     height: 35vw;
   }
 }
 
 @media only screen and (max-width: 328px){
-  .banner-2-mobile .containers #container {
+  .banner-2-mobile .containers .banner-2-container {
     height: 47vw;
   }
-  .banner-2-mobile .containers #container .container-img {
+  .banner-2-mobile .containers .banner-2-container .container-img {
     z-index: 2;
     width: 20vw;
     padding: 10px;
 }
-  .banner-2-mobile .containers #container .container-info .container-subtitle {
+  .banner-2-mobile .containers .banner-2-container .container-info .container-subtitle {
     font-size: 3vw;
   }
-  .banner-2-mobile .containers #container .container-info .container-text {
+  .banner-2-mobile .containers .banner-2-container .container-info .container-text {
     font-size: 1.8vw;
 }
 }

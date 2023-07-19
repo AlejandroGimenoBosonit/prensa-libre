@@ -15,15 +15,15 @@ function deviceCheck() {
   const isDesktop = window.matchMedia("(min-width: 1093px)");
 
   if (isMobile.matches) {
-    restartCoordinates();
+    // restartCoordinates();
     responsiveMobileFunc("mobile");
     return "mobile";
   } else if (isTablet.matches) {
-    restartCoordinates();
+    // restartCoordinates();
     responsiveTabletFunc("tablet");
     return "tablet";
   } else if (isDesktop.matches) {
-    restartCoordinates();
+    // restartCoordinates();
     desktopDesktopFunc();
     return "desktop";
   }
@@ -81,17 +81,16 @@ function refreshClassList(id) {
   var element = document.getElementById(id);
   element.classList.remove(...element.classList);
 }
-function restartCoordinates() {
-  console.log("inside");
-  // pag coordinates to y=0
-  window.scrollTo(0, 0);
-  // slider
-  let banner1Coords = document
-    .getElementById("banner-1")
-    .getBoundingClientRect();
-  document.getElementById("sld").scrollTo(0, 0);
-  // buttons
-}
+// function restartCoordinates() {
+//   // pag coordinates to y=0
+//   window.scrollTo(0, 0);
+//   // slider
+//   let banner1Coords = document
+//     .getElementById("banner-1")
+//     .getBoundingClientRect();
+//   document.getElementById("sld").scrollTo(0, 0);
+//   // buttons
+// }
 const displayElement = (id, style) =>
   (document.getElementById(id).style.display = style);
 const classToggle = (id, prev, post) =>

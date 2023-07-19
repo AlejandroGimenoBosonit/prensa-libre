@@ -1,5 +1,5 @@
 /* navbar */
-#pl-navbar {
+.navbar {
   background-color: var(--black-color);
   display: flex;
   flex-direction: row;
@@ -37,7 +37,7 @@
   color: var(--white-color);
 }
 
-#myTopNavResponsive {
+.myTopNavResponsive {
   display: none;
 }
 
@@ -46,7 +46,7 @@
   position: initial;
   align-self: center;
 }
-#myTopNavResponsive > a {
+.myTopNavResponsive > a {
   margin: 10px;
   text-decoration: none;
   color: var(--white-color);
@@ -93,7 +93,7 @@
   color: var(--white-color);
 }
 
-#myTopNavResponsive {
+.myTopNavResponsive {
   background-color: black;
   font-family: "Merriweather", serif;
 
