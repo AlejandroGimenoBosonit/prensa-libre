@@ -5,6 +5,24 @@
   background-color: var(--background-color);
   top: -1%;
 }
+.banner-1-title .titulo {
+  font-weight: 100;
+  color: var(--white-color);
+  font-size: 5vw;
+}
+.banner-1-title .subtitulo {
+  
+  font-size: 5vw;
+  color: var(--blue-subtitle);
+  font-weight: lighter;
+  letter-spacing: 0.3vw;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.imagen-fondo .reloj-fondo {
+  position: absolute;
+  z-index: 0;
+}
+
 .animate-title {
   animation: movement-title 1s forwards;
 }
@@ -49,23 +67,17 @@
 }
 .banner-1-desktop .banner-1-title .titulo {
   margin: 0;
-  color: var(--white-color);
-  font-size: 5vw;
 }
 .banner-1-desktop .banner-1-title .subtitulo {
   margin: 0;
-  color: var(--blue-subtitle);
   font-size: 2vw;
-  font-weight: lighter;
-  letter-spacing: 10px;
-  font-family: "Merriweather Sans", sans-serif;
 }
 .banner-1-desktop .imagen-fondo .reloj-fondo {
   width: 53%;
-  position: absolute;
+  
   right: 22%;
   bottom: 1%;
-  z-index: 0;
+  
 }
 .banner-1-desktop .imagen-fondo .bote img {
   bottom: 7%;
@@ -74,10 +86,10 @@
   /* left: 38%; */
 }
 .banner-1-desktop .imagen-fondo .bote .animate-bote {
-  animation: inverted-movement-boat-desktop 3s forwards;
+  animation: inverted-movement-boat-desktop 1s forwards;
 }
 .banner-1-desktop .imagen-fondo .bote .animate-bote-2 {
-  animation: movement-boat-desktop 3s forwards;
+  animation: movement-boat-desktop 1s forwards;
 }
 .banner-1-desktop .imagen-fondo .agua img {
   bottom: 1%;
@@ -121,23 +133,17 @@
   z-index: 1;
   font-family: "Merriweather Sans", sans-serif;
 }
-.banner-1-tablet .banner-1-title .titulo {
+/* .banner-1-tablet .banner-1-title .titulo {
   color: var(--white-color);
   font-size: 5vw;
-}
+} */
 .banner-1-tablet .banner-1-title .subtitulo {
-  color: var(--blue-subtitle);
   font-size: 2vw;
-  font-weight: lighter;
-  letter-spacing: 10px;
-  font-family: "Merriweather Sans", sans-serif;
 }
 .banner-1-tablet .imagen-fondo .reloj-fondo {
   width: 100%;
-  position: absolute;
   right: -1%;
   bottom: 0%;
-  z-index: 0;
 }
 .banner-1-tablet .imagen-fondo .bote img {
   bottom: 4%;
@@ -146,10 +152,10 @@
   /* left: 26%; */
 }
 .banner-1-tablet .imagen-fondo .bote .animate-bote {
-  animation: inverted-movement-boat-tablet 3s forwards;
+  animation: inverted-movement-boat-tablet 1s forwards;
 }
 .banner-1-tablet .imagen-fondo .bote .animate-bote-2 {
-  animation: movement-boat-tablet 3s forwards;
+  animation: movement-boat-tablet 1s forwards;
 }
 .banner-1-tablet .imagen-fondo .agua img {
   bottom: 1%;
@@ -194,22 +200,21 @@
   font-family: "Merriweather Sans", sans-serif;
 }
 .banner-1-mobile .banner-1-title .titulo {
-  color: var(--white-color);
+  
   font-size: 8vw;
 }
 .banner-1-mobile .banner-1-title .subtitulo {
-  color: var(--blue-subtitle);
+  
   font-size: 5vw;
+  color: var(--blue-subtitle);
   font-weight: lighter;
   letter-spacing: 1vw;
   font-family: "Merriweather Sans", sans-serif;
 }
 .banner-1-mobile .imagen-fondo .reloj-fondo {
   width: 100%;
-  position: absolute;
   right: -1%;
   bottom: 21%;
-  z-index: 0;
 }
 .banner-1-mobile .imagen-fondo .bote img {
   bottom: 23%;
@@ -218,10 +223,10 @@
   /* left: 26%; */
 }
 .banner-1-mobile .imagen-fondo .bote .animate-bote {
-  animation: inverted-movement-boat-mobile 3s forwards;
+  animation: inverted-movement-boat-mobile 1s forwards;
 }
 .banner-1-mobile .imagen-fondo .bote .animate-bote-2 {
-  animation: movement-boat-mobile 3s forwards;
+  animation: movement-boat-mobile 1s forwards;
 }
 .banner-1-mobile .imagen-fondo .agua img {
   bottom: 20%;

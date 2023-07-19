@@ -49,6 +49,7 @@
 
 
 .banner-2-desktop .banner-2-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -247,23 +248,106 @@
 .banner-2-desktop .animate-banner-2-title-inverted {
   animation: inverted-movement-banner-2-title 3s forwards;
 }
+@keyframes movement-banner-2-title {
+  0% { left: 25%; }
+  100% { left: 0%; }
+}
 
-.banner-2-desktop .containers .grid-container {
-  animation: fadeIn 0.5s ease-in both;
+@keyframes inverted-movement-banner-2-title {
+  0% { left: 0%; }
+  100% { left: 25%; }
 }
-.banner-2-desktop .containers .grid-container-inverted {
-  animation: fadeOut 0.5s ease-in both;
+
+
+
+
+
+
+
+
+
+
+/* animacion bloques 1 */
+.banner-2-desktop .containers div.alpha {
+  animation: transition-a 2s ease-in both;
 }
+/* div#containers div:nth-child(1) {
+  animation-delay: 0.4s;
+} */
+/* @keyframes transition-a {
+  0% { top: 23%; }
+  100% { top: 29%; }
+} */
+@keyframes transition-a {
+  0% { top: 23%; }
+  100% { top: 0%; }
+}
+
+.banner-2-desktop .containers div.betha {
+  animation: transition-b 2s ease-in both;
+}
+/* div#containers div:nth-child(3) {
+  animation-delay: 0.4s;
+} */
+/* @keyframes transition-b {
+  0% { top: 36%; }
+  100% { top: 29%; }
+} */
+@keyframes transition-b {
+  0% { top: 0%; }
+  100% { top: 29%; }
+}
+
+
+
+
+
+
+
+
+.banner-2-desktop .containers div.alpha-inverted {
+  animation: transition-a 2s ease-in both;
+}
+/* div#containers div:nth-child(1) {
+  animation-delay: 0.4s;
+} */
+@keyframes transition-a {
+  0% { top: 29%; }
+  100% { top: 0%; }
+}
+
+.banner-2-desktop .containers div.betha-inverted {
+  animation: transition-b 2s ease-in both;
+}
+/* div#containers div:nth-child(3) {
+  animation-delay: 0.4s;
+} */
+@keyframes transition-b {
+  0% { top: 29%; }
+  100% { top: 0%; }
+}
+
+
+
+
+/* .banner-2-desktop .containers .grid-container-inverted {
+  animation: inverted-transition 0.5s ease-in both;
+} */
+
+
+
+
 
 /* responsive animations */
-.banner-2-tablet .containers .grid-container, .banner-2-mobile .containers .grid-container {  
+/* .banner-2-tablet .containers .grid-container, .banner-2-mobile .containers .grid-container {  
   animation: fadeIn-inverse 0.5s ease-in both;
 }
 .banner-2-tablet .containers .grid-container-inverted ,.banner-2-mobile .containers .grid-container-inverted {
   animation: fadeOut-inverse 0.5s ease-in both;
-}
+} */
 
-div#containers div:nth-child(3) {
+
+/* div#containers div:nth-child(3) {
   animation-delay: 0.2s;
 }
 div#containers div:nth-child(2) {
@@ -326,6 +410,17 @@ div#containers div:nth-child(1) {
     transform: translate3d(0, -20%, 0);
   }
 }
+
+ */
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 459px){
   .banner-2-mobile .containers .banner-2-container {

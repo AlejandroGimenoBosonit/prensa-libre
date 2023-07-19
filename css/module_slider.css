@@ -32,16 +32,19 @@ transition: transform 0.4s ease-in-out;
 }
 
 #button_a:checked ~ .carousel .p-wrapper {
+  transition-duration: 1.5s;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
 #button_b:checked ~ .carousel .p-wrapper {
+  transition-duration: 1.5s;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
 #button_c:checked ~ .carousel .p-wrapper {
+  transition-duration: 1.5s;
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
 }

@@ -36,7 +36,29 @@ const clicked = (id) => {
     document.getElementById("banner-1-title").classList.replace("animate-title-2", "animate-title");
     // banner-2
     document.getElementById("banner-2-title").classList.replace("animate-banner-2-title-inverted", "animate-banner-2-title");
-    selectMultiElements("#container", "grid-container","grid-container-inverted");
+
+
+
+    // let elementA = document.querySelector(".grupo-a");
+    // elementA.classList.replace("grupo-a", "grupo-a-inverted");
+    // let elementB = document.querySelector(".grupo-b");
+    // elementB.classList.replace("grupo-b", "grupo-b-inverted");
+    // selectMultiElements("#container", "grid-container","grid-container-inverted");
+    let elementA = document.querySelector(".grupo-a");
+    let elementB = document.querySelector(".grupo-b");
+
+    if(elementA.classList.contains("alpha") && elementB.classList.contains("betha")){
+      console.log('TIENEN ALPHA Y BETHA');
+       elementA.classList.replace("alpha","alpha-inverted");
+       elementB.classList.replace("betha", "betha-inverted");
+    }else{
+      elementA.classList.add("alpha-inverted");
+      elementB.classList.add("betha-inverted");
+    }
+
+
+
+
     // banner-3
     document.getElementById("bote2-img").className = "animate-bote2-2";
     document.getElementById("banner-3-title").classList.replace("animate-banner-3-title", "inverted-animate-banner-3-title")
@@ -46,7 +68,25 @@ const clicked = (id) => {
   ) {
     // banner-2
     document.getElementById("banner-2-title").classList.replace("animate-banner-2-title", "animate-banner-2-title-inverted");
-    selectMultiElements("#container", "grid-container-inverted","grid-container");
+
+    // elegir elemento grupo-a
+    // elegir elemento grupo-b
+    // cambiarles las clases
+    // selectMultiElements("#container", "grid-container-inverted","grid-container");
+    let elementA = document.querySelector(".grupo-a");
+    let elementB = document.querySelector(".grupo-b");
+
+    if(elementA.classList.contains("alpha-inverted") && elementB.classList.contains("betha-inverted")){
+       elementA.classList.replace("alpha-inverted","alpha");
+       elementB.classList.replace("betha-inverted", "betha");
+    }else{
+      elementA.classList.add("alpha");
+      elementB.classList.add("betha");
+    }
+   
+  
+    
+
     // banner-1
     document.getElementById("bote-img").className = "animate-bote";
     document.getElementById("banner-1-title").classList.replace("animate-title", "animate-title-2");
@@ -62,18 +102,23 @@ const clicked = (id) => {
     document.getElementById("banner-3-title").classList.replace("inverted-animate-banner-3-title", "animate-banner-3-title")
     // banner-1
     document.getElementById("bote-img").className = "animate-bote";
+
+
     document.getElementById("banner-1-title").classList.replace("animate-title", "animate-title-2");
     document.getElementById("banner-2-title").classList.replace("animate-banner-2-title-inverted", "animate-banner-2-title");
-    selectMultiElements("#container", "grid-container","grid-container-inverted");
-  }
-};
+    // selectMultiElements("#container", "grid-container","grid-container-inverted");
+    
+    let elementA = document.querySelector(".grupo-a");
+    let elementB = document.querySelector(".grupo-b");
 
-const selectMultiElements = (id, prevClass, newClass) => {
-  const elements = document.querySelectorAll(id);
-  elements.forEach((element) => {
-    element.classList.add(newClass);
-    element.classList.replace(prevClass, newClass);
-  });
+    if(elementA.classList.contains("alpha") && elementB.classList.contains("betha")){
+       elementA.classList.replace("alpha","alpha-inverted");
+       elementB.classList.replace("betha", "betha-inverted");
+    }else{
+      elementA.classList.add("alpha-inverted");
+      elementB.classList.add("betha-inverted");
+    }
+  }
 };
 
 function arrowUp(arrUp) {
